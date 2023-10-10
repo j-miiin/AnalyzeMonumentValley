@@ -220,7 +220,7 @@ GameObject:
   - component: {fileID: 30769417}
   - component: {fileID: 30769416}
   m_Layer: 9
-  m_Name: Box
+  m_Name: Box55
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -237,7 +237,8 @@ Transform:
   m_LocalPosition: {x: 6, y: 0, z: 4.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 48651428}
   m_Father: {fileID: 978233448}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -291,6 +292,59 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 30769414}
   m_Mesh: {fileID: -3262789968867269347, guid: cb43d1fe393e54be78d018ccb7093ba4, type: 3}
+--- !u!1 &48651427
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 48651428}
+  - component: {fileID: 48651429}
+  m_Layer: 9
+  m_Name: Node55
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &48651428
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48651427}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 30769415}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &48651429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48651427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e382c44da12f4d2a83df3044cc89bf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gizmoRadius: 0.1
+  defaultGizmoColor: {r: 0, g: 0, b: 0, a: 1}
+  selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
+  inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  edges: []
+  excludedNodes: []
+  gameEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &51397317
 GameObject:
   m_ObjectHideFlags: 0
@@ -305,7 +359,7 @@ GameObject:
   - component: {fileID: 51397320}
   - component: {fileID: 51397319}
   m_Layer: 9
-  m_Name: Box27
+  m_Name: Box60
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -422,7 +476,7 @@ GameObject:
   - component: {fileID: 76803255}
   - component: {fileID: 76803254}
   m_Layer: 9
-  m_Name: Node28C
+  m_Name: Node61C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -480,7 +534,7 @@ GameObject:
   - component: {fileID: 76941764}
   - component: {fileID: 76941763}
   m_Layer: 9
-  m_Name: Node28
+  m_Name: Node48
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -538,7 +592,7 @@ GameObject:
   - component: {fileID: 99115656}
   - component: {fileID: 99115657}
   m_Layer: 9
-  m_Name: Node28
+  m_Name: Node77
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -575,9 +629,7 @@ MonoBehaviour:
   defaultGizmoColor: {r: 0, g: 0, b: 0, a: 1}
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  edges:
-  - neighbor: {fileID: 1911275575}
-    isActive: 1
+  edges: []
   excludedNodes: []
   gameEvent:
     m_PersistentCalls:
@@ -593,7 +645,7 @@ GameObject:
   - component: {fileID: 103936101}
   - component: {fileID: 103936102}
   m_Layer: 9
-  m_Name: Node30A
+  m_Name: Node46A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -646,7 +698,7 @@ GameObject:
   - component: {fileID: 107171812}
   - component: {fileID: 107171813}
   m_Layer: 9
-  m_Name: Node28
+  m_Name: Node80
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -683,9 +735,7 @@ MonoBehaviour:
   defaultGizmoColor: {r: 0, g: 0, b: 0, a: 1}
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  edges:
-  - neighbor: {fileID: 1911275575}
-    isActive: 1
+  edges: []
   excludedNodes: []
   gameEvent:
     m_PersistentCalls:
@@ -701,7 +751,7 @@ PrefabInstance:
     - target: {fileID: 8475767387723794852, guid: d9d3183ca0c374460a75928d6ad62153,
         type: 3}
       propertyPath: m_RootOrder
-      value: 27
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 8475767387723794852, guid: d9d3183ca0c374460a75928d6ad62153,
         type: 3}
@@ -787,7 +837,7 @@ GameObject:
   - component: {fileID: 114036749}
   - component: {fileID: 114036748}
   m_Layer: 9
-  m_Name: Box35
+  m_Name: Box89
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -934,7 +984,7 @@ GameObject:
   - component: {fileID: 122102880}
   - component: {fileID: 122102881}
   m_Layer: 9
-  m_Name: Node30A
+  m_Name: Node63A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -987,7 +1037,7 @@ GameObject:
   - component: {fileID: 129952412}
   - component: {fileID: 129952413}
   m_Layer: 9
-  m_Name: Node32C
+  m_Name: Node44C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1025,7 +1075,7 @@ MonoBehaviour:
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   edges:
-  - neighbor: {fileID: 5510223870293155419}
+  - neighbor: {fileID: 1141456813}
     isActive: 1
   excludedNodes:
   - {fileID: 719915319}
@@ -1070,7 +1120,7 @@ GameObject:
   - component: {fileID: 145966432}
   - component: {fileID: 145966431}
   m_Layer: 9
-  m_Name: Box26 (2)
+  m_Name: Box58
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1090,7 +1140,6 @@ Transform:
   m_Children:
   - {fileID: 1618267040}
   - {fileID: 458490031}
-  - {fileID: 441679689}
   m_Father: {fileID: 982960766}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1188,7 +1237,7 @@ GameObject:
   - component: {fileID: 146418961}
   - component: {fileID: 146418960}
   m_Layer: 9
-  m_Name: Node29
+  m_Name: Node47
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1211,9 +1260,9 @@ MonoBehaviour:
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   edges:
-  - neighbor: {fileID: 76941763}
-    isActive: 1
   - neighbor: {fileID: 1292855009}
+    isActive: 1
+  - neighbor: {fileID: 76941763}
     isActive: 1
   excludedNodes:
   - {fileID: 459017773}
@@ -1246,7 +1295,7 @@ GameObject:
   - component: {fileID: 152814141}
   - component: {fileID: 152814142}
   m_Layer: 9
-  m_Name: Node26D
+  m_Name: Node57D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1284,9 +1333,9 @@ MonoBehaviour:
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   edges:
-  - neighbor: {fileID: 365145414}
+  - neighbor: {fileID: 1637945373}
     isActive: 1
-  - neighbor: {fileID: 1840798608}
+  - neighbor: {fileID: 1132165243}
     isActive: 1
   excludedNodes:
   - {fileID: 1948249906}
@@ -1363,7 +1412,7 @@ GameObject:
   - component: {fileID: 186066954}
   - component: {fileID: 186066953}
   m_Layer: 9
-  m_Name: Node32
+  m_Name: Node65
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1385,40 +1434,12 @@ MonoBehaviour:
   defaultGizmoColor: {r: 0, g: 0, b: 0, a: 1}
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  edges:
-  - neighbor: {fileID: 1560875295}
-    isActive: 1
-  - neighbor: {fileID: 5510223870293155419}
-    isActive: 1
+  edges: []
   excludedNodes:
   - {fileID: 1698712923}
   gameEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6374139950399808245}
-        m_TargetAssemblyTypeName: RW.MonumentValley.DragSpinner, Assembly-CSharp
-        m_MethodName: EnableSpinner
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 6374139950399808139}
-        m_TargetAssemblyTypeName: RW.MonumentValley.Highlighter, Assembly-CSharp
-        m_MethodName: EnableHighlight
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!4 &186066954
 Transform:
   m_ObjectHideFlags: 0
@@ -1445,12 +1466,12 @@ PrefabInstance:
     - target: {fileID: 1595454393995855596, guid: 3048fb8c2869b47ec98cbccf029e4165,
         type: 3}
       propertyPath: m_RootOrder
-      value: 28
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: 1595454393995855596, guid: 3048fb8c2869b47ec98cbccf029e4165,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1595454393995855596, guid: 3048fb8c2869b47ec98cbccf029e4165,
         type: 3}
@@ -1510,7 +1531,7 @@ PrefabInstance:
     - target: {fileID: 1595454393995855597, guid: 3048fb8c2869b47ec98cbccf029e4165,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1599,23 +1620,23 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 215218775}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 20, y: 11, z: -11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1965731359}
-  - {fileID: 1950339832}
-  - {fileID: 1137929110}
-  - {fileID: 295933573}
-  - {fileID: 767120691}
-  - {fileID: 1949486319}
-  - {fileID: 768754968}
-  - {fileID: 1057584254}
   - {fileID: 2047833249}
+  - {fileID: 1057584254}
+  - {fileID: 768754968}
+  - {fileID: 1949486319}
+  - {fileID: 767120691}
+  - {fileID: 295933573}
+  - {fileID: 1137929110}
+  - {fileID: 1950339832}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &220014167
 GameObject:
   m_ObjectHideFlags: 0
@@ -2062,6 +2083,59 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 604073618}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &291901793
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 291901794}
+  - component: {fileID: 291901795}
+  m_Layer: 9
+  m_Name: Node54
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &291901794
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 291901793}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1571915601}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &291901795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 291901793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e382c44da12f4d2a83df3044cc89bf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gizmoRadius: 0.1
+  defaultGizmoColor: {r: 0, g: 0, b: 0, a: 1}
+  selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
+  inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  edges: []
+  excludedNodes: []
+  gameEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &295933572
 GameObject:
   m_ObjectHideFlags: 0
@@ -2076,7 +2150,7 @@ GameObject:
   - component: {fileID: 295933575}
   - component: {fileID: 295933574}
   m_Layer: 9
-  m_Name: Box27
+  m_Name: Box49
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2193,7 +2267,7 @@ GameObject:
   - component: {fileID: 300150546}
   - component: {fileID: 300150545}
   m_Layer: 9
-  m_Name: Node26C
+  m_Name: Node59C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2216,9 +2290,9 @@ MonoBehaviour:
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   edges:
-  - neighbor: {fileID: 800609456}
+  - neighbor: {fileID: 458490030}
     isActive: 1
-  - neighbor: {fileID: 792198168}
+  - neighbor: {fileID: 800609456}
     isActive: 1
   excludedNodes:
   - {fileID: 1970319697}
@@ -2251,7 +2325,7 @@ GameObject:
   - component: {fileID: 302355675}
   - component: {fileID: 302355676}
   m_Layer: 9
-  m_Name: Node35
+  m_Name: Node89
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2288,9 +2362,7 @@ MonoBehaviour:
   defaultGizmoColor: {r: 0, g: 0, b: 0, a: 1}
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  edges:
-  - neighbor: {fileID: 0}
-    isActive: 1
+  edges: []
   excludedNodes: []
   gameEvent:
     m_PersistentCalls:
@@ -2322,12 +2394,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 306356448}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3, y: -1.25, z: 5}
+  m_LocalPosition: {x: 6.2, y: 2.9499998, z: 4.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 978233448}
-  m_RootOrder: 5
+  m_Father: {fileID: 0}
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &306356451
 BoxCollider:
@@ -2411,7 +2483,7 @@ GameObject:
   - component: {fileID: 325449843}
   - component: {fileID: 325449842}
   m_Layer: 9
-  m_Name: Node28C
+  m_Name: Node48C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2458,6 +2530,95 @@ Transform:
   m_Father: {fileID: 767120691}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &338645379
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1595454393995855596, guid: 3048fb8c2869b47ec98cbccf029e4165,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 39
+      objectReference: {fileID: 0}
+    - target: {fileID: 1595454393995855596, guid: 3048fb8c2869b47ec98cbccf029e4165,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1595454393995855596, guid: 3048fb8c2869b47ec98cbccf029e4165,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 11.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1595454393995855596, guid: 3048fb8c2869b47ec98cbccf029e4165,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1595454393995855596, guid: 3048fb8c2869b47ec98cbccf029e4165,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1595454393995855596, guid: 3048fb8c2869b47ec98cbccf029e4165,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1595454393995855596, guid: 3048fb8c2869b47ec98cbccf029e4165,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1595454393995855596, guid: 3048fb8c2869b47ec98cbccf029e4165,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1595454393995855596, guid: 3048fb8c2869b47ec98cbccf029e4165,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1595454393995855596, guid: 3048fb8c2869b47ec98cbccf029e4165,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1595454393995855596, guid: 3048fb8c2869b47ec98cbccf029e4165,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1595454393995855596, guid: 3048fb8c2869b47ec98cbccf029e4165,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1595454393995855597, guid: 3048fb8c2869b47ec98cbccf029e4165,
+        type: 3}
+      propertyPath: m_Name
+      value: LJointGray18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1595454393995855597, guid: 3048fb8c2869b47ec98cbccf029e4165,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3048fb8c2869b47ec98cbccf029e4165, type: 3}
+--- !u!1 &338645380 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1595454393995855597, guid: 3048fb8c2869b47ec98cbccf029e4165,
+    type: 3}
+  m_PrefabInstance: {fileID: 338645379}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &339219681
 GameObject:
   m_ObjectHideFlags: 0
@@ -2469,7 +2630,7 @@ GameObject:
   - component: {fileID: 339219682}
   - component: {fileID: 339219683}
   m_Layer: 9
-  m_Name: Node34
+  m_Name: Node88
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2506,9 +2667,7 @@ MonoBehaviour:
   defaultGizmoColor: {r: 0, g: 0, b: 0, a: 1}
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  edges:
-  - neighbor: {fileID: 0}
-    isActive: 1
+  edges: []
   excludedNodes: []
   gameEvent:
     m_PersistentCalls:
@@ -2524,7 +2683,7 @@ GameObject:
   - component: {fileID: 340319248}
   - component: {fileID: 340319249}
   m_Layer: 9
-  m_Name: Node28
+  m_Name: Node82
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2561,9 +2720,7 @@ MonoBehaviour:
   defaultGizmoColor: {r: 0, g: 0, b: 0, a: 1}
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  edges:
-  - neighbor: {fileID: 1911275575}
-    isActive: 1
+  edges: []
   excludedNodes: []
   gameEvent:
     m_PersistentCalls:
@@ -2661,7 +2818,7 @@ GameObject:
   - component: {fileID: 365145413}
   - component: {fileID: 365145414}
   m_Layer: 9
-  m_Name: Node28
+  m_Name: Node83
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2698,9 +2855,7 @@ MonoBehaviour:
   defaultGizmoColor: {r: 0, g: 0, b: 0, a: 1}
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  edges:
-  - neighbor: {fileID: 1911275575}
-    isActive: 1
+  edges: []
   excludedNodes: []
   gameEvent:
     m_PersistentCalls:
@@ -2732,12 +2887,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 370413474}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2, y: -1.25, z: 5}
+  m_LocalPosition: {x: 5.2, y: 2.9499998, z: 4.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 978233448}
-  m_RootOrder: 4
+  m_Father: {fileID: 0}
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &370413477
 BoxCollider:
@@ -2940,7 +3095,7 @@ GameObject:
   - component: {fileID: 393570619}
   - component: {fileID: 393570620}
   m_Layer: 9
-  m_Name: Node33
+  m_Name: Node87
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2977,9 +3132,7 @@ MonoBehaviour:
   defaultGizmoColor: {r: 0, g: 0, b: 0, a: 1}
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  edges:
-  - neighbor: {fileID: 0}
-    isActive: 1
+  edges: []
   excludedNodes: []
   gameEvent:
     m_PersistentCalls:
@@ -3113,7 +3266,7 @@ GameObject:
   - component: {fileID: 393821202}
   - component: {fileID: 393821201}
   m_Layer: 9
-  m_Name: Node26C
+  m_Name: Node50C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3138,7 +3291,7 @@ MonoBehaviour:
   edges:
   - neighbor: {fileID: 507661388}
     isActive: 1
-  - neighbor: {fileID: 792198168}
+  - neighbor: {fileID: 700322751}
     isActive: 1
   excludedNodes:
   - {fileID: 562514026}
@@ -3171,7 +3324,7 @@ GameObject:
   - component: {fileID: 394063227}
   - component: {fileID: 394063226}
   m_Layer: 9
-  m_Name: Node27
+  m_Name: Node60
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3229,7 +3382,7 @@ GameObject:
   - component: {fileID: 399583560}
   - component: {fileID: 399583561}
   m_Layer: 9
-  m_Name: NodeStairRamp1
+  m_Name: NodeStairRamp2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3267,9 +3420,9 @@ MonoBehaviour:
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   edges:
-  - neighbor: {fileID: 1141456813}
+  - neighbor: {fileID: 1850865699}
     isActive: 1
-  - neighbor: {fileID: 1319892408}
+  - neighbor: {fileID: 2102471883}
     isActive: 1
   excludedNodes: []
   gameEvent:
@@ -3304,7 +3457,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &410907451
 GameObject:
@@ -3320,7 +3473,7 @@ GameObject:
   - component: {fileID: 410907454}
   - component: {fileID: 410907453}
   m_Layer: 9
-  m_Name: Box28
+  m_Name: Box61
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3556,7 +3709,7 @@ GameObject:
   - component: {fileID: 416113263}
   - component: {fileID: 416113264}
   m_Layer: 9
-  m_Name: Node31B
+  m_Name: Node45B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3599,18 +3752,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2080036500}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2145658446}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -3759,7 +3900,7 @@ GameObject:
   - component: {fileID: 427776319}
   - component: {fileID: 427776320}
   m_Layer: 9
-  m_Name: Node32A
+  m_Name: Node44A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3797,7 +3938,7 @@ MonoBehaviour:
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   edges:
-  - neighbor: {fileID: 5510223870293155419}
+  - neighbor: {fileID: 1141456813}
     isActive: 1
   excludedNodes: []
   gameEvent:
@@ -3841,7 +3982,7 @@ GameObject:
   - component: {fileID: 428331152}
   - component: {fileID: 428331151}
   m_Layer: 9
-  m_Name: Box28 (7)
+  m_Name: Box78
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3957,7 +4098,7 @@ GameObject:
   - component: {fileID: 434703339}
   - component: {fileID: 434703338}
   m_Layer: 9
-  m_Name: Node28
+  m_Name: Node61
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3980,9 +4121,9 @@ MonoBehaviour:
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   edges:
-  - neighbor: {fileID: 1947806040}
-    isActive: 1
   - neighbor: {fileID: 394063226}
+    isActive: 1
+  - neighbor: {fileID: 1947806040}
     isActive: 1
   excludedNodes:
   - {fileID: 76803254}
@@ -4004,65 +4145,6 @@ Transform:
   m_Father: {fileID: 410907452}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &441679688
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 441679689}
-  - component: {fileID: 441679690}
-  m_Layer: 9
-  m_Name: Node26D
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &441679689
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 441679688}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.5, z: 0.000000059604645}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 145966430}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &441679690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 441679688}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e382c44da12f4d2a83df3044cc89bf8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gizmoRadius: 0.1
-  defaultGizmoColor: {r: 0, g: 0, b: 0, a: 1}
-  selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
-  inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  edges:
-  - neighbor: {fileID: 365145414}
-    isActive: 1
-  - neighbor: {fileID: 1840798608}
-    isActive: 1
-  excludedNodes:
-  - {fileID: 1618267039}
-  - {fileID: 458490030}
-  gameEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &444490019
 GameObject:
   m_ObjectHideFlags: 0
@@ -4077,7 +4159,7 @@ GameObject:
   - component: {fileID: 444490022}
   - component: {fileID: 444490021}
   m_Layer: 9
-  m_Name: Box23
+  m_Name: Box67
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4312,7 +4394,7 @@ GameObject:
   - component: {fileID: 458490031}
   - component: {fileID: 458490030}
   m_Layer: 9
-  m_Name: Node26C
+  m_Name: Node58C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4335,9 +4417,9 @@ MonoBehaviour:
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   edges:
-  - neighbor: {fileID: 800609456}
+  - neighbor: {fileID: 846326491}
     isActive: 1
-  - neighbor: {fileID: 792198168}
+  - neighbor: {fileID: 300150545}
     isActive: 1
   excludedNodes:
   - {fileID: 1618267039}
@@ -4370,7 +4452,7 @@ GameObject:
   - component: {fileID: 459017772}
   - component: {fileID: 459017773}
   m_Layer: 9
-  m_Name: Node29C
+  m_Name: Node47C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4408,6 +4490,8 @@ MonoBehaviour:
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   edges:
+  - neighbor: {fileID: 1050852682}
+    isActive: 1
   - neighbor: {fileID: 325449842}
     isActive: 1
   excludedNodes:
@@ -4426,7 +4510,7 @@ GameObject:
   - component: {fileID: 461984559}
   - component: {fileID: 461984560}
   m_Layer: 9
-  m_Name: Node28
+  m_Name: Node76
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4463,9 +4547,7 @@ MonoBehaviour:
   defaultGizmoColor: {r: 0, g: 0, b: 0, a: 1}
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  edges:
-  - neighbor: {fileID: 1911275575}
-    isActive: 1
+  edges: []
   excludedNodes: []
   gameEvent:
     m_PersistentCalls:
@@ -4548,6 +4630,159 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ecda6712c379d4c2ab7c3250c88cd7c2, type: 3}
+--- !u!1 &482295351
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 482295357}
+  - component: {fileID: 482295356}
+  - component: {fileID: 482295355}
+  - component: {fileID: 482295354}
+  - component: {fileID: 482295353}
+  - component: {fileID: 482295352}
+  m_Layer: 9
+  m_Name: SpinnerControl3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &482295352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 482295351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5aacdc8d43f8a4b4cb5eaf7654ce2f09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationLinks:
+  - linkedTransform: {fileID: 4782087691319487719}
+    activeEulerAngle: {x: 90, y: 0, z: 0}
+    nodeA: {fileID: 1371602401}
+    nodeB: {fileID: 1439214001}
+  - linkedTransform: {fileID: 4782087691319487719}
+    activeEulerAngle: {x: 90, y: 0, z: 0}
+    nodeA: {fileID: 1948249906}
+    nodeB: {fileID: 700322751}
+  - linkedTransform: {fileID: 4782087691319487719}
+    activeEulerAngle: {x: 270, y: 0, z: 0}
+    nodeA: {fileID: 1910588511}
+    nodeB: {fileID: 1439214001}
+  - linkedTransform: {fileID: 4782087691319487719}
+    activeEulerAngle: {x: 270, y: 0, z: 0}
+    nodeA: {fileID: 846326491}
+    nodeB: {fileID: 1274136649}
+  - linkedTransform: {fileID: 4782087691319487719}
+    activeEulerAngle: {x: 180, y: 0, z: 0}
+    nodeA: {fileID: 1439214001}
+    nodeB: {fileID: 712546347}
+  - linkedTransform: {fileID: 4782087691319487719}
+    activeEulerAngle: {x: 180, y: 0, z: 0}
+    nodeA: {fileID: 152814142}
+    nodeB: {fileID: 1132165243}
+  - linkedTransform: {fileID: 4782087691319487719}
+    activeEulerAngle: {x: 180, y: 0, z: 0}
+    nodeA: {fileID: 152814142}
+    nodeB: {fileID: 1637945373}
+--- !u!114 &482295353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 482295351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aba1b4ffe640f422b8829f5cc1d067f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meshRenderers:
+  - {fileID: 835318160}
+  highlightProperty: _IsHighlighted
+--- !u!114 &482295354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 482295351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9026485a8ab34db4a3dfe8017119308, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetToSpin: {fileID: 982960766}
+  spinAxis: 0
+  pivot: {fileID: 482295357}
+  minDragDist: 10
+  snapEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 482295352}
+        m_TargetAssemblyTypeName: RW.MonumentValley.Linker, Assembly-CSharp
+        m_MethodName: UpdateRotationLinks
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!64 &482295355
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 482295351}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!33 &482295356
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 482295351}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &482295357
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 482295351}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 7.85, y: 7, z: 0}
+  m_LocalScale: {x: 4, y: 0.049999993, z: 4}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!1 &507661387
 GameObject:
   m_ObjectHideFlags: 0
@@ -4559,7 +4794,7 @@ GameObject:
   - component: {fileID: 507661389}
   - component: {fileID: 507661388}
   m_Layer: 9
-  m_Name: Node27C
+  m_Name: Node49C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4617,7 +4852,7 @@ PrefabInstance:
     - target: {fileID: 8475767387723794852, guid: d9d3183ca0c374460a75928d6ad62153,
         type: 3}
       propertyPath: m_RootOrder
-      value: 25
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 8475767387723794852, guid: d9d3183ca0c374460a75928d6ad62153,
         type: 3}
@@ -4700,7 +4935,7 @@ PrefabInstance:
     - target: {fileID: 1595454393995855596, guid: 3048fb8c2869b47ec98cbccf029e4165,
         type: 3}
       propertyPath: m_RootOrder
-      value: 29
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 1595454393995855596, guid: 3048fb8c2869b47ec98cbccf029e4165,
         type: 3}
@@ -4786,7 +5021,7 @@ GameObject:
   - component: {fileID: 556521716}
   - component: {fileID: 556521715}
   m_Layer: 9
-  m_Name: Box33
+  m_Name: Box87
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4902,7 +5137,7 @@ GameObject:
   - component: {fileID: 562514027}
   - component: {fileID: 562514026}
   m_Layer: 9
-  m_Name: Node26
+  m_Name: Node50
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4927,37 +5162,13 @@ MonoBehaviour:
   edges:
   - neighbor: {fileID: 1515271973}
     isActive: 1
-  - neighbor: {fileID: 575632585904296577}
+  - neighbor: {fileID: 745052973}
     isActive: 1
   excludedNodes:
   - {fileID: 393821201}
   gameEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6374139950399808245}
-        m_TargetAssemblyTypeName: RW.MonumentValley.DragSpinner, Assembly-CSharp
-        m_MethodName: EnableSpinner
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 6374139950399808139}
-        m_TargetAssemblyTypeName: RW.MonumentValley.Highlighter, Assembly-CSharp
-        m_MethodName: EnableHighlight
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!4 &562514027
 Transform:
   m_ObjectHideFlags: 0
@@ -4973,7 +5184,7 @@ Transform:
   m_Father: {fileID: 1137929110}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &568624891
+--- !u!1 &571995650
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4981,37 +5192,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 568624892}
-  - component: {fileID: 568624893}
+  - component: {fileID: 571995651}
+  - component: {fileID: 571995652}
   m_Layer: 9
-  m_Name: Node26D
+  m_Name: Node52
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &568624892
+--- !u!4 &571995651
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 568624891}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.5, z: 0.000000059604645}
+  m_GameObject: {fileID: 571995650}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1137929110}
-  m_RootOrder: 2
+  m_Father: {fileID: 1271166428}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &568624893
+--- !u!114 &571995652
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 568624891}
+  m_GameObject: {fileID: 571995650}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7e382c44da12f4d2a83df3044cc89bf8, type: 3}
@@ -5021,14 +5232,8 @@ MonoBehaviour:
   defaultGizmoColor: {r: 0, g: 0, b: 0, a: 1}
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  edges:
-  - neighbor: {fileID: 365145414}
-    isActive: 1
-  - neighbor: {fileID: 1840798608}
-    isActive: 1
-  excludedNodes:
-  - {fileID: 562514026}
-  - {fileID: 393821201}
+  edges: []
+  excludedNodes: []
   gameEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -5046,7 +5251,7 @@ GameObject:
   - component: {fileID: 573428529}
   - component: {fileID: 573428528}
   m_Layer: 9
-  m_Name: Box28 (8)
+  m_Name: Box79
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5345,7 +5550,7 @@ GameObject:
   - component: {fileID: 614774297}
   - component: {fileID: 614774298}
   m_Layer: 9
-  m_Name: Node25D
+  m_Name: Node51D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5383,9 +5588,7 @@ MonoBehaviour:
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   edges:
-  - neighbor: {fileID: 365145414}
-    isActive: 1
-  - neighbor: {fileID: 1840798608}
+  - neighbor: {fileID: 571995652}
     isActive: 1
   excludedNodes:
   - {fileID: 745052973}
@@ -5438,7 +5641,7 @@ GameObject:
   - component: {fileID: 630400338}
   - component: {fileID: 630400337}
   m_Layer: 9
-  m_Name: Box29
+  m_Name: Box62
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5559,7 +5762,7 @@ GameObject:
   - component: {fileID: 647715823}
   - component: {fileID: 647715822}
   m_Layer: 9
-  m_Name: Box29
+  m_Name: Box84
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5675,7 +5878,7 @@ GameObject:
   - component: {fileID: 648936714}
   - component: {fileID: 648936715}
   m_Layer: 9
-  m_Name: Node32A
+  m_Name: Node66A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5713,7 +5916,9 @@ MonoBehaviour:
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   edges:
-  - neighbor: {fileID: 5510223870293155419}
+  - neighbor: {fileID: 1439214001}
+    isActive: 1
+  - neighbor: {fileID: 1024761913}
     isActive: 1
   excludedNodes: []
   gameEvent:
@@ -5859,7 +6064,7 @@ GameObject:
   - component: {fileID: 672604380}
   - component: {fileID: 672604381}
   m_Layer: 9
-  m_Name: Node32
+  m_Name: Node39
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5896,9 +6101,7 @@ MonoBehaviour:
   defaultGizmoColor: {r: 0, g: 0, b: 0, a: 1}
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  edges:
-  - neighbor: {fileID: 0}
-    isActive: 1
+  edges: []
   excludedNodes: []
   gameEvent:
     m_PersistentCalls:
@@ -5914,7 +6117,7 @@ GameObject:
   - component: {fileID: 699695780}
   - component: {fileID: 699695781}
   m_Layer: 9
-  m_Name: Node32
+  m_Name: Node86
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5951,9 +6154,7 @@ MonoBehaviour:
   defaultGizmoColor: {r: 0, g: 0, b: 0, a: 1}
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  edges:
-  - neighbor: {fileID: 0}
-    isActive: 1
+  edges: []
   excludedNodes: []
   gameEvent:
     m_PersistentCalls:
@@ -5969,7 +6170,7 @@ GameObject:
   - component: {fileID: 700322752}
   - component: {fileID: 700322751}
   m_Layer: 9
-  m_Name: Node25C
+  m_Name: Node51C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6027,7 +6228,7 @@ GameObject:
   - component: {fileID: 712546346}
   - component: {fileID: 712546347}
   m_Layer: 9
-  m_Name: Node32B
+  m_Name: Node66B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6065,7 +6266,9 @@ MonoBehaviour:
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   edges:
-  - neighbor: {fileID: 5510223870293155419}
+  - neighbor: {fileID: 1439214001}
+    isActive: 1
+  - neighbor: {fileID: 1109117400}
     isActive: 1
   excludedNodes: []
   gameEvent:
@@ -6109,7 +6312,7 @@ GameObject:
   - component: {fileID: 716413384}
   - component: {fileID: 716413383}
   m_Layer: 9
-  m_Name: BridgePlatform
+  m_Name: BridgePlatform2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6225,7 +6428,7 @@ GameObject:
   - component: {fileID: 719915320}
   - component: {fileID: 719915319}
   m_Layer: 9
-  m_Name: Node32
+  m_Name: Node44
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6248,9 +6451,9 @@ MonoBehaviour:
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   edges:
-  - neighbor: {fileID: 972770589}
+  - neighbor: {fileID: 1141456813}
     isActive: 1
-  - neighbor: {fileID: 5510223870293155419}
+  - neighbor: {fileID: 972770589}
     isActive: 1
   excludedNodes:
   - {fileID: 129952413}
@@ -6307,7 +6510,7 @@ GameObject:
   - component: {fileID: 727739423}
   - component: {fileID: 727739424}
   m_Layer: 9
-  m_Name: Node30B
+  m_Name: Node63B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6349,19 +6552,7 @@ MonoBehaviour:
   gameEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2080036500}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 2145658446}
+      - m_Target: {fileID: 338645380}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -6384,7 +6575,7 @@ GameObject:
   - component: {fileID: 745052974}
   - component: {fileID: 745052973}
   m_Layer: 9
-  m_Name: Node25
+  m_Name: Node51
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6553,12 +6744,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 748379178}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1, y: -1.25, z: 5}
+  m_LocalPosition: {x: 2.2, y: 2.9499998, z: 4.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 978233448}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &751857894
 GameObject:
@@ -6598,7 +6789,7 @@ Transform:
   - {fileID: 1564945352}
   - {fileID: 1101656655}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &767120690
 GameObject:
@@ -6614,7 +6805,7 @@ GameObject:
   - component: {fileID: 767120693}
   - component: {fileID: 767120692}
   m_Layer: 9
-  m_Name: Box28
+  m_Name: Box48
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6734,7 +6925,7 @@ GameObject:
   - component: {fileID: 768754970}
   - component: {fileID: 768754969}
   m_Layer: 9
-  m_Name: Box30
+  m_Name: Box46
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6958,7 +7149,7 @@ GameObject:
   - component: {fileID: 792198167}
   - component: {fileID: 792198168}
   m_Layer: 9
-  m_Name: Node23
+  m_Name: Node33
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6996,36 +7187,12 @@ MonoBehaviour:
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   edges:
-  - neighbor: {fileID: 3970511120824626084}
+  - neighbor: {fileID: 1184743310}
     isActive: 1
   excludedNodes: []
   gameEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6374139950399808139}
-        m_TargetAssemblyTypeName: RW.MonumentValley.Highlighter, Assembly-CSharp
-        m_MethodName: EnableHighlight
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 6374139950399808245}
-        m_TargetAssemblyTypeName: RW.MonumentValley.DragSpinner, Assembly-CSharp
-        m_MethodName: EnableSpinner
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &800609455
 GameObject:
   m_ObjectHideFlags: 0
@@ -7037,7 +7204,7 @@ GameObject:
   - component: {fileID: 800609457}
   - component: {fileID: 800609456}
   m_Layer: 9
-  m_Name: Node27C
+  m_Name: Node60C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7095,7 +7262,7 @@ GameObject:
   - component: {fileID: 800985881}
   - component: {fileID: 800985882}
   m_Layer: 9
-  m_Name: Node27
+  m_Name: Node71
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7151,7 +7318,7 @@ GameObject:
   - component: {fileID: 811607325}
   - component: {fileID: 811607324}
   m_Layer: 9
-  m_Name: Box28 (4)
+  m_Name: Box75
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7283,12 +7450,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 825363009}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.75, y: -1.25, z: 5}
+  m_LocalPosition: {x: 6.95, y: 2.9499998, z: 4.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 978233448}
-  m_RootOrder: 6
+  m_Father: {fileID: 0}
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &825363012
 BoxCollider:
@@ -7389,7 +7556,7 @@ GameObject:
   - component: {fileID: 835318161}
   - component: {fileID: 835318160}
   m_Layer: 9
-  m_Name: SpinnerMesh
+  m_Name: SpinnerMesh3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7462,6 +7629,59 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 835318158}
   m_Mesh: {fileID: -4878571378358550986, guid: 8bad099971fb44be8a4548c17adf7f62, type: 3}
+--- !u!1 &839038012
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 839038013}
+  - component: {fileID: 839038014}
+  m_Layer: 9
+  m_Name: Node53
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &839038013
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839038012}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1272285839}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &839038014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839038012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e382c44da12f4d2a83df3044cc89bf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gizmoRadius: 0.1
+  defaultGizmoColor: {r: 0, g: 0, b: 0, a: 1}
+  selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
+  inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  edges: []
+  excludedNodes: []
+  gameEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &839176686
 GameObject:
   m_ObjectHideFlags: 0
@@ -7476,7 +7696,7 @@ GameObject:
   - component: {fileID: 839176689}
   - component: {fileID: 839176688}
   m_Layer: 9
-  m_Name: Box28 (5)
+  m_Name: Box74
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7700,7 +7920,7 @@ GameObject:
   - component: {fileID: 843298290}
   - component: {fileID: 843298289}
   m_Layer: 9
-  m_Name: Box32
+  m_Name: Box86
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7816,7 +8036,7 @@ GameObject:
   - component: {fileID: 846326492}
   - component: {fileID: 846326491}
   m_Layer: 9
-  m_Name: Node26C
+  m_Name: Node57C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7839,9 +8059,9 @@ MonoBehaviour:
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   edges:
-  - neighbor: {fileID: 800609456}
+  - neighbor: {fileID: 458490030}
     isActive: 1
-  - neighbor: {fileID: 792198168}
+  - neighbor: {fileID: 1274136649}
     isActive: 1
   excludedNodes:
   - {fileID: 1948249906}
@@ -7877,7 +8097,7 @@ GameObject:
   - component: {fileID: 847505154}
   - component: {fileID: 847505153}
   m_Layer: 9
-  m_Name: Box28
+  m_Name: Box41
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7998,7 +8218,7 @@ GameObject:
   - component: {fileID: 859412774}
   - component: {fileID: 859412773}
   m_Layer: 9
-  m_Name: Box32 (1)
+  m_Name: Box66
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8150,7 +8370,7 @@ GameObject:
   - component: {fileID: 882313688}
   - component: {fileID: 882313687}
   m_Layer: 9
-  m_Name: Node31C
+  m_Name: Node64C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8468,7 +8688,7 @@ GameObject:
   - component: {fileID: 907197522}
   - component: {fileID: 907197521}
   m_Layer: 9
-  m_Name: Box31
+  m_Name: Box40
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8815,7 +9035,7 @@ GameObject:
   - component: {fileID: 932899588}
   - component: {fileID: 932899589}
   m_Layer: 9
-  m_Name: Node26
+  m_Name: Node70
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9027,7 +9247,7 @@ GameObject:
   - component: {fileID: 962835415}
   - component: {fileID: 962835414}
   m_Layer: 9
-  m_Name: Box26
+  m_Name: Box70
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9149,7 +9369,7 @@ GameObject:
   - component: {fileID: 969634988}
   - component: {fileID: 969634989}
   m_Layer: 9
-  m_Name: Node29C
+  m_Name: Node62C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9205,7 +9425,7 @@ GameObject:
   - component: {fileID: 972770590}
   - component: {fileID: 972770589}
   m_Layer: 9
-  m_Name: Node31
+  m_Name: Node45
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9480,20 +9700,13 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 748379183}
-  - {fileID: 1829521896}
-  - {fileID: 2099557475}
-  - {fileID: 1466625910}
-  - {fileID: 370413475}
-  - {fileID: 306356449}
-  - {fileID: 825363010}
   - {fileID: 1271166428}
   - {fileID: 1272285839}
   - {fileID: 1571915601}
   - {fileID: 30769415}
   - {fileID: 1183670955}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &982960765
 GameObject:
@@ -9535,7 +9748,7 @@ Transform:
   - {fileID: 1515784266}
   - {fileID: 859412772}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
 --- !u!1 &991123031
 GameObject:
@@ -9604,7 +9817,7 @@ GameObject:
   - component: {fileID: 992829031}
   - component: {fileID: 992829030}
   m_Layer: 9
-  m_Name: Box25
+  m_Name: Box69
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9804,7 +10017,7 @@ GameObject:
   - component: {fileID: 1013187321}
   - component: {fileID: 1013187322}
   m_Layer: 9
-  m_Name: Node28
+  m_Name: Node79
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9841,9 +10054,7 @@ MonoBehaviour:
   defaultGizmoColor: {r: 0, g: 0, b: 0, a: 1}
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  edges:
-  - neighbor: {fileID: 1911275575}
-    isActive: 1
+  edges: []
   excludedNodes: []
   gameEvent:
     m_PersistentCalls:
@@ -9915,7 +10126,7 @@ GameObject:
   - component: {fileID: 1018035053}
   - component: {fileID: 1018035052}
   m_Layer: 9
-  m_Name: Box28 (3)
+  m_Name: Box76
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10031,7 +10242,7 @@ GameObject:
   - component: {fileID: 1018583206}
   - component: {fileID: 1018583207}
   m_Layer: 9
-  m_Name: Node28
+  m_Name: Node41
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10069,7 +10280,7 @@ MonoBehaviour:
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   edges:
-  - neighbor: {fileID: 1911275575}
+  - neighbor: {fileID: 2102471883}
     isActive: 1
   excludedNodes: []
   gameEvent:
@@ -10086,7 +10297,7 @@ GameObject:
   - component: {fileID: 1024761912}
   - component: {fileID: 1024761913}
   m_Layer: 9
-  m_Name: Node32A
+  m_Name: Node65A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10123,37 +10334,11 @@ MonoBehaviour:
   defaultGizmoColor: {r: 0, g: 0, b: 0, a: 1}
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  edges:
-  - neighbor: {fileID: 5510223870293155419}
-    isActive: 1
+  edges: []
   excludedNodes: []
   gameEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6374139950399808245}
-        m_TargetAssemblyTypeName: RW.MonumentValley.DragSpinner, Assembly-CSharp
-        m_MethodName: EnableSpinner
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 6374139950399808139}
-        m_TargetAssemblyTypeName: RW.MonumentValley.Highlighter, Assembly-CSharp
-        m_MethodName: EnableHighlight
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &1043113692
 GameObject:
   m_ObjectHideFlags: 0
@@ -10165,7 +10350,7 @@ GameObject:
   - component: {fileID: 1043113693}
   - component: {fileID: 1043113694}
   m_Layer: 9
-  m_Name: Node27
+  m_Name: Node73
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10218,7 +10403,7 @@ GameObject:
   - component: {fileID: 1050852681}
   - component: {fileID: 1050852682}
   m_Layer: 9
-  m_Name: Node30C
+  m_Name: Node46C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10272,7 +10457,7 @@ GameObject:
   - component: {fileID: 1051565280}
   - component: {fileID: 1051565281}
   m_Layer: 9
-  m_Name: Node28
+  m_Name: Node78
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10309,9 +10494,7 @@ MonoBehaviour:
   defaultGizmoColor: {r: 0, g: 0, b: 0, a: 1}
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  edges:
-  - neighbor: {fileID: 1911275575}
-    isActive: 1
+  edges: []
   excludedNodes: []
   gameEvent:
     m_PersistentCalls:
@@ -10336,7 +10519,7 @@ GameObject:
   - component: {fileID: 1057584256}
   - component: {fileID: 1057584255}
   m_Layer: 9
-  m_Name: Box31
+  m_Name: Box45
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10560,7 +10743,7 @@ GameObject:
   - component: {fileID: 1088296239}
   - component: {fileID: 1088296240}
   m_Layer: 9
-  m_Name: Node29A
+  m_Name: Node47A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10602,7 +10785,7 @@ MonoBehaviour:
   gameEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6374139950399808139}
+      - m_Target: {fileID: 1900569459}
         m_TargetAssemblyTypeName: RW.MonumentValley.Highlighter, Assembly-CSharp
         m_MethodName: EnableHighlight
         m_Mode: 6
@@ -10614,7 +10797,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 6374139950399808245}
+      - m_Target: {fileID: 1900569460}
         m_TargetAssemblyTypeName: RW.MonumentValley.DragSpinner, Assembly-CSharp
         m_MethodName: EnableSpinner
         m_Mode: 6
@@ -10640,7 +10823,7 @@ GameObject:
   - component: {fileID: 1101656657}
   - component: {fileID: 1101656656}
   m_Layer: 9
-  m_Name: Box30
+  m_Name: Box43
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10756,7 +10939,7 @@ GameObject:
   - component: {fileID: 1109117399}
   - component: {fileID: 1109117400}
   m_Layer: 9
-  m_Name: Node32B
+  m_Name: Node65B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10793,37 +10976,11 @@ MonoBehaviour:
   defaultGizmoColor: {r: 0, g: 0, b: 0, a: 1}
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  edges:
-  - neighbor: {fileID: 5510223870293155419}
-    isActive: 1
+  edges: []
   excludedNodes: []
   gameEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6374139950399808245}
-        m_TargetAssemblyTypeName: RW.MonumentValley.DragSpinner, Assembly-CSharp
-        m_MethodName: EnableSpinner
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 6374139950399808139}
-        m_TargetAssemblyTypeName: RW.MonumentValley.Highlighter, Assembly-CSharp
-        m_MethodName: EnableHighlight
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &1110738239
 GameObject:
   m_ObjectHideFlags: 0
@@ -10835,7 +10992,7 @@ GameObject:
   - component: {fileID: 1110738240}
   - component: {fileID: 1110738241}
   m_Layer: 9
-  m_Name: Node27
+  m_Name: Node72
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11007,7 +11164,7 @@ GameObject:
   - component: {fileID: 1132165242}
   - component: {fileID: 1132165243}
   m_Layer: 9
-  m_Name: NodeBridgePlatform
+  m_Name: NodeBridgePlatform2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11045,7 +11202,7 @@ MonoBehaviour:
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   edges:
-  - neighbor: {fileID: 1911275575}
+  - neighbor: {fileID: 152814142}
     isActive: 1
   excludedNodes: []
   gameEvent:
@@ -11065,7 +11222,7 @@ GameObject:
   - component: {fileID: 1137929112}
   - component: {fileID: 1137929111}
   m_Layer: 9
-  m_Name: Box26
+  m_Name: Box50
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11085,7 +11242,6 @@ Transform:
   m_Children:
   - {fileID: 562514027}
   - {fileID: 393821202}
-  - {fileID: 568624892}
   m_Father: {fileID: 215218776}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11183,7 +11339,7 @@ GameObject:
   - component: {fileID: 1141456812}
   - component: {fileID: 1141456813}
   m_Layer: 9
-  m_Name: Node30
+  m_Name: Node43
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11221,7 +11377,13 @@ MonoBehaviour:
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   edges:
-  - neighbor: {fileID: 1850865699}
+  - neighbor: {fileID: 719915319}
+    isActive: 1
+  - neighbor: {fileID: 427776320}
+    isActive: 1
+  - neighbor: {fileID: 1517540548}
+    isActive: 1
+  - neighbor: {fileID: 129952413}
     isActive: 1
   excludedNodes: []
   gameEvent:
@@ -11449,7 +11611,7 @@ GameObject:
   - component: {fileID: 1183670957}
   - component: {fileID: 1183670956}
   m_Layer: 9
-  m_Name: Box
+  m_Name: Box56
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11466,7 +11628,8 @@ Transform:
   m_LocalPosition: {x: 6, y: 0, z: 5.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1439214000}
   m_Father: {fileID: 978233448}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11531,7 +11694,7 @@ GameObject:
   - component: {fileID: 1184743309}
   - component: {fileID: 1184743310}
   m_Layer: 9
-  m_Name: Node33
+  m_Name: Node38
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11569,7 +11732,7 @@ MonoBehaviour:
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   edges:
-  - neighbor: {fileID: 0}
+  - neighbor: {fileID: 792198168}
     isActive: 1
   excludedNodes: []
   gameEvent:
@@ -11589,7 +11752,7 @@ GameObject:
   - component: {fileID: 1185927283}
   - component: {fileID: 1185927282}
   m_Layer: 9
-  m_Name: Box34
+  m_Name: Box88
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11705,7 +11868,7 @@ GameObject:
   - component: {fileID: 1195414013}
   - component: {fileID: 1195414012}
   m_Layer: 9
-  m_Name: Node31C
+  m_Name: Node45C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11768,7 +11931,7 @@ GameObject:
   - component: {fileID: 1225815482}
   - component: {fileID: 1225815481}
   m_Layer: 9
-  m_Name: Box28 (6)
+  m_Name: Box77
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11885,7 +12048,7 @@ GameObject:
   - component: {fileID: 1271166430}
   - component: {fileID: 1271166429}
   m_Layer: 9
-  m_Name: Box
+  m_Name: Box52
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11902,7 +12065,8 @@ Transform:
   m_LocalPosition: {x: 6, y: 0, z: 1.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 571995651}
   m_Father: {fileID: 978233448}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11968,7 +12132,7 @@ GameObject:
   - component: {fileID: 1272285841}
   - component: {fileID: 1272285840}
   m_Layer: 9
-  m_Name: Box
+  m_Name: Box53
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11985,7 +12149,8 @@ Transform:
   m_LocalPosition: {x: 6, y: 0, z: 2.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 839038013}
   m_Father: {fileID: 978233448}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12050,7 +12215,7 @@ GameObject:
   - component: {fileID: 1274136648}
   - component: {fileID: 1274136649}
   m_Layer: 9
-  m_Name: Node23
+  m_Name: Node67
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12132,7 +12297,7 @@ GameObject:
   - component: {fileID: 1274152635}
   - component: {fileID: 1274152634}
   m_Layer: 9
-  m_Name: Box28 (2)
+  m_Name: Box82
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12248,7 +12413,7 @@ GameObject:
   - component: {fileID: 1280338360}
   - component: {fileID: 1280338361}
   m_Layer: 9
-  m_Name: Node29
+  m_Name: Node42
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12301,7 +12466,7 @@ GameObject:
   - component: {fileID: 1281453052}
   - component: {fileID: 1281453053}
   m_Layer: 9
-  m_Name: Node31
+  m_Name: Node85
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12356,7 +12521,7 @@ GameObject:
   - component: {fileID: 1292855010}
   - component: {fileID: 1292855009}
   m_Layer: 9
-  m_Name: Node30
+  m_Name: Node46
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12410,7 +12575,7 @@ GameObject:
   - component: {fileID: 1305042993}
   - component: {fileID: 1305042994}
   m_Layer: 9
-  m_Name: NodeStairRamp1
+  m_Name: NodeStairRamp4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12448,9 +12613,9 @@ MonoBehaviour:
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   edges:
-  - neighbor: {fileID: 0}
+  - neighbor: {fileID: 5510223868933817531}
     isActive: 1
-  - neighbor: {fileID: 1281453053}
+  - neighbor: {fileID: 1951190518}
     isActive: 1
   excludedNodes: []
   gameEvent:
@@ -12587,7 +12752,7 @@ GameObject:
   - component: {fileID: 1319892409}
   - component: {fileID: 1319892408}
   m_Layer: 9
-  m_Name: Node31
+  m_Name: Node40
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12921,7 +13086,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1358811433 stripped
 Transform:
@@ -13026,7 +13191,7 @@ GameObject:
   - component: {fileID: 1365348720}
   - component: {fileID: 1365348719}
   m_Layer: 9
-  m_Name: Box27
+  m_Name: Box71
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13142,7 +13307,7 @@ GameObject:
   - component: {fileID: 1371602402}
   - component: {fileID: 1371602401}
   m_Layer: 9
-  m_Name: Node32
+  m_Name: Node66
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13165,9 +13330,9 @@ MonoBehaviour:
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   edges:
-  - neighbor: {fileID: 1560875295}
+  - neighbor: {fileID: 1439214001}
     isActive: 1
-  - neighbor: {fileID: 5510223870293155419}
+  - neighbor: {fileID: 186066953}
     isActive: 1
   excludedNodes:
   - {fileID: 1910588511}
@@ -13213,65 +13378,6 @@ Transform:
   m_Father: {fileID: 859412772}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1371886554
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1371886555}
-  - component: {fileID: 1371886556}
-  m_Layer: 9
-  m_Name: Node26D
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1371886555
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1371886554}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.5, z: 0.000000059604645}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1832959473}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1371886556
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1371886554}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e382c44da12f4d2a83df3044cc89bf8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gizmoRadius: 0.1
-  defaultGizmoColor: {r: 0, g: 0, b: 0, a: 1}
-  selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
-  inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  edges:
-  - neighbor: {fileID: 365145414}
-    isActive: 1
-  - neighbor: {fileID: 1840798608}
-    isActive: 1
-  excludedNodes:
-  - {fileID: 1970319697}
-  - {fileID: 300150545}
-  gameEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1001 &1374344719
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13283,7 +13389,7 @@ PrefabInstance:
     - target: {fileID: 8475767387723794852, guid: d9d3183ca0c374460a75928d6ad62153,
         type: 3}
       propertyPath: m_RootOrder
-      value: 26
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 8475767387723794852, guid: d9d3183ca0c374460a75928d6ad62153,
         type: 3}
@@ -13375,7 +13481,7 @@ GameObject:
   - component: {fileID: 1419336158}
   - component: {fileID: 1419336157}
   m_Layer: 9
-  m_Name: Box28 (1)
+  m_Name: Box81
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13570,6 +13676,67 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ecda6712c379d4c2ab7c3250c88cd7c2, type: 3}
+--- !u!1 &1439213999
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1439214000}
+  - component: {fileID: 1439214001}
+  m_Layer: 9
+  m_Name: Node56
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1439214000
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439213999}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1183670955}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1439214001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439213999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e382c44da12f4d2a83df3044cc89bf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gizmoRadius: 0.1
+  defaultGizmoColor: {r: 0, g: 0, b: 0, a: 1}
+  selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
+  inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  edges:
+  - neighbor: {fileID: 1371602401}
+    isActive: 1
+  - neighbor: {fileID: 648936715}
+    isActive: 1
+  - neighbor: {fileID: 712546347}
+    isActive: 1
+  - neighbor: {fileID: 1910588511}
+    isActive: 1
+  excludedNodes: []
+  gameEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1445660388
 GameObject:
   m_ObjectHideFlags: 0
@@ -13584,7 +13751,7 @@ GameObject:
   - component: {fileID: 1445660391}
   - component: {fileID: 1445660390}
   m_Layer: 9
-  m_Name: Box32
+  m_Name: Box39
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13800,12 +13967,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1466625909}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: -1.25, z: 5}
+  m_LocalPosition: {x: 4.2, y: 2.9499998, z: 4.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 978233448}
-  m_RootOrder: 3
+  m_Father: {fileID: 0}
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1466625912
 BoxCollider:
@@ -13892,7 +14059,7 @@ GameObject:
   - component: {fileID: 1511298743}
   - component: {fileID: 1511298742}
   m_Layer: 9
-  m_Name: Box27 (2)
+  m_Name: Box73
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14061,7 +14228,7 @@ GameObject:
   - component: {fileID: 1515271974}
   - component: {fileID: 1515271973}
   m_Layer: 9
-  m_Name: Node27
+  m_Name: Node49
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14124,7 +14291,7 @@ GameObject:
   - component: {fileID: 1515784268}
   - component: {fileID: 1515784267}
   m_Layer: 9
-  m_Name: Box32
+  m_Name: Box65
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14276,7 +14443,7 @@ GameObject:
   - component: {fileID: 1517540547}
   - component: {fileID: 1517540548}
   m_Layer: 9
-  m_Name: Node32B
+  m_Name: Node44B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14314,7 +14481,7 @@ MonoBehaviour:
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   edges:
-  - neighbor: {fileID: 5510223870293155419}
+  - neighbor: {fileID: 1141456813}
     isActive: 1
   excludedNodes: []
   gameEvent:
@@ -14473,7 +14640,7 @@ GameObject:
   - component: {fileID: 1527736562}
   - component: {fileID: 1527736563}
   m_Layer: 9
-  m_Name: Node24
+  m_Name: Node68
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14631,7 +14798,7 @@ GameObject:
   - component: {fileID: 1557950578}
   - component: {fileID: 1557950579}
   m_Layer: 9
-  m_Name: Node31A
+  m_Name: Node45A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14708,7 +14875,7 @@ GameObject:
   - component: {fileID: 1560875296}
   - component: {fileID: 1560875295}
   m_Layer: 9
-  m_Name: Node31
+  m_Name: Node64
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14765,7 +14932,7 @@ GameObject:
   - component: {fileID: 1564945354}
   - component: {fileID: 1564945353}
   m_Layer: 9
-  m_Name: Box29
+  m_Name: Box42
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14884,7 +15051,7 @@ GameObject:
   - component: {fileID: 1568628308}
   - component: {fileID: 1568628307}
   m_Layer: 9
-  m_Name: Box28 (9)
+  m_Name: Box80
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15001,7 +15168,7 @@ GameObject:
   - component: {fileID: 1571915603}
   - component: {fileID: 1571915602}
   m_Layer: 9
-  m_Name: Box
+  m_Name: Box54
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15018,7 +15185,8 @@ Transform:
   m_LocalPosition: {x: 6, y: 0, z: 3.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 291901794}
   m_Father: {fileID: 978233448}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -15326,7 +15494,7 @@ Transform:
   - {fileID: 4518785738302421907}
   - {fileID: 1625081660}
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1616540655
 PrefabInstance:
@@ -15339,7 +15507,7 @@ PrefabInstance:
     - target: {fileID: 29916635749068816, guid: b2b6f15a31d9c43c9a927fe52aabd43c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 32
+      value: 42
       objectReference: {fileID: 0}
     - target: {fileID: 29916635749068816, guid: b2b6f15a31d9c43c9a927fe52aabd43c,
         type: 3}
@@ -15432,7 +15600,7 @@ GameObject:
   - component: {fileID: 1618267040}
   - component: {fileID: 1618267039}
   m_Layer: 9
-  m_Name: Node26
+  m_Name: Node58
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15455,39 +15623,15 @@ MonoBehaviour:
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   edges:
-  - neighbor: {fileID: 394063226}
+  - neighbor: {fileID: 1948249906}
     isActive: 1
-  - neighbor: {fileID: 575632585904296577}
+  - neighbor: {fileID: 1970319697}
     isActive: 1
   excludedNodes:
   - {fileID: 458490030}
   gameEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6374139950399808245}
-        m_TargetAssemblyTypeName: RW.MonumentValley.DragSpinner, Assembly-CSharp
-        m_MethodName: EnableSpinner
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 6374139950399808139}
-        m_TargetAssemblyTypeName: RW.MonumentValley.Highlighter, Assembly-CSharp
-        m_MethodName: EnableHighlight
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!4 &1618267040
 Transform:
   m_ObjectHideFlags: 0
@@ -15667,7 +15811,7 @@ GameObject:
   - component: {fileID: 1637945372}
   - component: {fileID: 1637945373}
   m_Layer: 9
-  m_Name: Node28
+  m_Name: Node74
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15705,7 +15849,7 @@ MonoBehaviour:
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   edges:
-  - neighbor: {fileID: 1911275575}
+  - neighbor: {fileID: 152814142}
     isActive: 1
   excludedNodes: []
   gameEvent:
@@ -15775,7 +15919,7 @@ GameObject:
   - component: {fileID: 1698712922}
   - component: {fileID: 1698712923}
   m_Layer: 9
-  m_Name: Node32C
+  m_Name: Node65C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15812,38 +15956,12 @@ MonoBehaviour:
   defaultGizmoColor: {r: 0, g: 0, b: 0, a: 1}
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  edges:
-  - neighbor: {fileID: 5510223870293155419}
-    isActive: 1
+  edges: []
   excludedNodes:
   - {fileID: 186066953}
   gameEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6374139950399808245}
-        m_TargetAssemblyTypeName: RW.MonumentValley.DragSpinner, Assembly-CSharp
-        m_MethodName: EnableSpinner
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 6374139950399808139}
-        m_TargetAssemblyTypeName: RW.MonumentValley.Highlighter, Assembly-CSharp
-        m_MethodName: EnableHighlight
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &1699644372
 GameObject:
   m_ObjectHideFlags: 0
@@ -15858,7 +15976,7 @@ GameObject:
   - component: {fileID: 1699644375}
   - component: {fileID: 1699644374}
   m_Layer: 9
-  m_Name: Box33
+  m_Name: Box38
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15974,7 +16092,7 @@ GameObject:
   - component: {fileID: 1713000756}
   - component: {fileID: 1713000757}
   m_Layer: 9
-  m_Name: Node25
+  m_Name: Node69
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16030,7 +16148,7 @@ GameObject:
   - component: {fileID: 1721025861}
   - component: {fileID: 1721025860}
   m_Layer: 9
-  m_Name: Box26 (1)
+  m_Name: Box57
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16151,7 +16269,7 @@ GameObject:
   - component: {fileID: 1724767996}
   - component: {fileID: 1724767995}
   m_Layer: 9
-  m_Name: Box27
+  m_Name: Box37
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16267,7 +16385,7 @@ GameObject:
   - component: {fileID: 1748778083}
   - component: {fileID: 1748778084}
   m_Layer: 9
-  m_Name: Node31B
+  m_Name: Node64B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16309,19 +16427,7 @@ MonoBehaviour:
   gameEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2080036500}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2145658446}
+      - m_Target: {fileID: 338645380}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -16536,7 +16642,7 @@ GameObject:
   - component: {fileID: 1781041382}
   - component: {fileID: 1781041381}
   m_Layer: 9
-  m_Name: Box28
+  m_Name: Box83
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16663,7 +16769,7 @@ PrefabInstance:
     - target: {fileID: 2423906599848667259, guid: 1a4ea91619c2c48b99dc4648f2819953,
         type: 3}
       propertyPath: m_RootOrder
-      value: 35
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 2423906599848667259, guid: 1a4ea91619c2c48b99dc4648f2819953,
         type: 3}
@@ -16739,7 +16845,7 @@ GameObject:
   - component: {fileID: 1828200046}
   - component: {fileID: 1828200045}
   m_Layer: 9
-  m_Name: Box31
+  m_Name: Box64
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16874,12 +16980,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1829521895}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.25, z: 5}
+  m_LocalPosition: {x: 3.2, y: 2.9499998, z: 4.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 978233448}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1829521898
 BoxCollider:
@@ -16966,7 +17072,7 @@ GameObject:
   - component: {fileID: 1830392308}
   - component: {fileID: 1830392307}
   m_Layer: 9
-  m_Name: Box31
+  m_Name: Box85
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17085,7 +17191,7 @@ GameObject:
   - component: {fileID: 1832959475}
   - component: {fileID: 1832959474}
   m_Layer: 9
-  m_Name: Box26
+  m_Name: Box59
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17105,7 +17211,6 @@ Transform:
   m_Children:
   - {fileID: 1970319698}
   - {fileID: 300150546}
-  - {fileID: 1371886555}
   m_Father: {fileID: 982960766}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17203,7 +17308,7 @@ GameObject:
   - component: {fileID: 1840179269}
   - component: {fileID: 1840179270}
   m_Layer: 9
-  m_Name: Node27
+  m_Name: Node37
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17294,12 +17399,36 @@ MonoBehaviour:
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   edges:
-  - neighbor: {fileID: 202304223}
+  - neighbor: {fileID: 180409174}
     isActive: 1
   excludedNodes: []
   gameEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6374139950399808139}
+        m_TargetAssemblyTypeName: RW.MonumentValley.Highlighter, Assembly-CSharp
+        m_MethodName: EnableHighlight
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 6374139950399808245}
+        m_TargetAssemblyTypeName: RW.MonumentValley.DragSpinner, Assembly-CSharp
+        m_MethodName: EnableSpinner
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &1842561753
 GameObject:
   m_ObjectHideFlags: 0
@@ -17329,7 +17458,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 33
+  m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1850865698
 GameObject:
@@ -17365,9 +17494,9 @@ MonoBehaviour:
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   edges:
-  - neighbor: {fileID: 1141456813}
-    isActive: 1
   - neighbor: {fileID: 1319892408}
+    isActive: 1
+  - neighbor: {fileID: 399583561}
     isActive: 1
   excludedNodes: []
   gameEvent:
@@ -17403,15 +17532,11 @@ MonoBehaviour:
   rotationLinks:
   - linkedTransform: {fileID: 4782087691319487719}
     activeEulerAngle: {x: 90, y: 0, z: 0}
-    nodeA: {fileID: 575632585904296577}
-    nodeB: {fileID: 3970511119768593413}
+    nodeA: {fileID: 220014169}
+    nodeB: {fileID: 342244089}
   - linkedTransform: {fileID: 4782087691319487719}
     activeEulerAngle: {x: 90, y: 0, z: 0}
     nodeA: {fileID: 3970511119617368396}
-    nodeB: {fileID: 5510223870293155419}
-  - linkedTransform: {fileID: 4782087691319487719}
-    activeEulerAngle: {x: 180, y: 0, z: 0}
-    nodeA: {fileID: 3970511119597013171}
     nodeB: {fileID: 5510223870293155419}
   - linkedTransform: {fileID: 4782087691319487719}
     activeEulerAngle: {x: 270, y: 0, z: 0}
@@ -17419,20 +17544,12 @@ MonoBehaviour:
     nodeB: {fileID: 5510223870293155419}
   - linkedTransform: {fileID: 4782087691319487719}
     activeEulerAngle: {x: 270, y: 0, z: 0}
-    nodeA: {fileID: 792198168}
-    nodeB: {fileID: 3970511120824626084}
+    nodeA: {fileID: 1840798608}
+    nodeB: {fileID: 180409174}
   - linkedTransform: {fileID: 4782087691319487719}
     activeEulerAngle: {x: 0, y: 0, z: 0}
-    nodeA: {fileID: 3970511119767894227}
+    nodeA: {fileID: 3970511119735413550}
     nodeB: {fileID: 5510223870293155419}
-  - linkedTransform: {fileID: 4782087691319487719}
-    activeEulerAngle: {x: 180, y: 0, z: 0}
-    nodeA: {fileID: 1840798608}
-    nodeB: {fileID: 1911275575}
-  - linkedTransform: {fileID: 4782087691319487719}
-    activeEulerAngle: {x: 180, y: 0, z: 0}
-    nodeA: {fileID: 365145414}
-    nodeB: {fileID: 1911275575}
 --- !u!1 &1890424100
 GameObject:
   m_ObjectHideFlags: 0
@@ -17554,6 +17671,147 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1890424100}
   m_Mesh: {fileID: -3262789968867269347, guid: cb43d1fe393e54be78d018ccb7093ba4, type: 3}
+--- !u!1 &1900569457
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1900569463}
+  - component: {fileID: 1900569462}
+  - component: {fileID: 1900569461}
+  - component: {fileID: 1900569460}
+  - component: {fileID: 1900569459}
+  - component: {fileID: 1900569458}
+  m_Layer: 9
+  m_Name: SpinnerControl2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1900569458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900569457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5aacdc8d43f8a4b4cb5eaf7654ce2f09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationLinks:
+  - linkedTransform: {fileID: 4782087691319487719}
+    activeEulerAngle: {x: 90, y: 0, z: 0}
+    nodeA: {fileID: 1141456813}
+    nodeB: {fileID: 719915319}
+  - linkedTransform: {fileID: 4782087691319487719}
+    activeEulerAngle: {x: 270, y: 0, z: 0}
+    nodeA: {fileID: 1141456813}
+    nodeB: {fileID: 129952413}
+  - linkedTransform: {fileID: 4782087691319487719}
+    activeEulerAngle: {x: 270, y: 0, z: 0}
+    nodeA: {fileID: 700322751}
+    nodeB: {fileID: 1948249906}
+  - linkedTransform: {fileID: 4782087691319487719}
+    activeEulerAngle: {x: 180, y: 0, z: 0}
+    nodeA: {fileID: 614774298}
+    nodeB: {fileID: 571995652}
+--- !u!114 &1900569459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900569457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aba1b4ffe640f422b8829f5cc1d067f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meshRenderers:
+  - {fileID: 1965731360}
+  highlightProperty: _IsHighlighted
+--- !u!114 &1900569460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900569457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9026485a8ab34db4a3dfe8017119308, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetToSpin: {fileID: 215218776}
+  spinAxis: 0
+  pivot: {fileID: 1900569463}
+  minDragDist: 10
+  snapEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1900569458}
+        m_TargetAssemblyTypeName: RW.MonumentValley.Linker, Assembly-CSharp
+        m_MethodName: UpdateRotationLinks
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!64 &1900569461
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900569457}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!33 &1900569462
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900569457}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1900569463
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900569457}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 7.85, y: 7, z: 0}
+  m_LocalScale: {x: 4, y: 0.049999993, z: 4}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!1 &1910588509
 GameObject:
   m_ObjectHideFlags: 0
@@ -17565,7 +17823,7 @@ GameObject:
   - component: {fileID: 1910588510}
   - component: {fileID: 1910588511}
   m_Layer: 9
-  m_Name: Node32C
+  m_Name: Node66C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17603,7 +17861,9 @@ MonoBehaviour:
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   edges:
-  - neighbor: {fileID: 5510223870293155419}
+  - neighbor: {fileID: 1439214001}
+    isActive: 1
+  - neighbor: {fileID: 1698712923}
     isActive: 1
   excludedNodes:
   - {fileID: 1371602401}
@@ -17730,7 +17990,7 @@ Transform:
   - {fileID: 1511298741}
   - {fileID: 716413382}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1919932616
 GameObject:
@@ -17743,7 +18003,7 @@ GameObject:
   - component: {fileID: 1919932617}
   - component: {fileID: 1919932618}
   m_Layer: 9
-  m_Name: Node30B
+  m_Name: Node46B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17797,18 +18057,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 2145658446}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
 --- !u!1 &1929716474
 GameObject:
   m_ObjectHideFlags: 0
@@ -17823,7 +18071,7 @@ GameObject:
   - component: {fileID: 1929716477}
   - component: {fileID: 1929716476}
   m_Layer: 9
-  m_Name: Box30
+  m_Name: Box63
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17945,7 +18193,7 @@ GameObject:
   - component: {fileID: 1930557900}
   - component: {fileID: 1930557899}
   m_Layer: 9
-  m_Name: StairRamp2
+  m_Name: StairRamp4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17958,14 +18206,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1930557897}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 11, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1305042993}
   m_Father: {fileID: 4125098053196020054}
-  m_RootOrder: 3
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &1930557899
 MonoBehaviour:
@@ -18292,7 +18540,7 @@ GameObject:
   - component: {fileID: 1947806041}
   - component: {fileID: 1947806040}
   m_Layer: 9
-  m_Name: Node29
+  m_Name: Node62
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18350,7 +18598,7 @@ GameObject:
   - component: {fileID: 1948249907}
   - component: {fileID: 1948249906}
   m_Layer: 9
-  m_Name: Node26
+  m_Name: Node57
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18373,16 +18621,16 @@ MonoBehaviour:
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   edges:
-  - neighbor: {fileID: 394063226}
+  - neighbor: {fileID: 700322751}
     isActive: 1
-  - neighbor: {fileID: 575632585904296577}
+  - neighbor: {fileID: 1618267039}
     isActive: 1
   excludedNodes:
   - {fileID: 846326491}
   gameEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6374139950399808245}
+      - m_Target: {fileID: 482295354}
         m_TargetAssemblyTypeName: RW.MonumentValley.DragSpinner, Assembly-CSharp
         m_MethodName: EnableSpinner
         m_Mode: 6
@@ -18394,7 +18642,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 6374139950399808139}
+      - m_Target: {fileID: 482295353}
         m_TargetAssemblyTypeName: RW.MonumentValley.Highlighter, Assembly-CSharp
         m_MethodName: EnableHighlight
         m_Mode: 6
@@ -18435,7 +18683,7 @@ GameObject:
   - component: {fileID: 1949486321}
   - component: {fileID: 1949486320}
   m_Layer: 9
-  m_Name: Box29
+  m_Name: Box47
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18556,7 +18804,7 @@ GameObject:
   - component: {fileID: 1950339834}
   - component: {fileID: 1950339833}
   m_Layer: 9
-  m_Name: Box25
+  m_Name: Box51
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18674,7 +18922,7 @@ GameObject:
   - component: {fileID: 1951190517}
   - component: {fileID: 1951190518}
   m_Layer: 9
-  m_Name: Node29
+  m_Name: Node84
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18711,7 +18959,9 @@ MonoBehaviour:
   defaultGizmoColor: {r: 0, g: 0, b: 0, a: 1}
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  edges: []
+  edges:
+  - neighbor: {fileID: 1305042994}
+    isActive: 1
   excludedNodes: []
   gameEvent:
     m_PersistentCalls:
@@ -18727,7 +18977,7 @@ GameObject:
   - component: {fileID: 1953832395}
   - component: {fileID: 1953832396}
   m_Layer: 9
-  m_Name: Node31A
+  m_Name: Node64A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18768,31 +19018,7 @@ MonoBehaviour:
   excludedNodes: []
   gameEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6374139950399808139}
-        m_TargetAssemblyTypeName: RW.MonumentValley.Highlighter, Assembly-CSharp
-        m_MethodName: EnableHighlight
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 6374139950399808245}
-        m_TargetAssemblyTypeName: RW.MonumentValley.DragSpinner, Assembly-CSharp
-        m_MethodName: EnableSpinner
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &1954496781
 GameObject:
   m_ObjectHideFlags: 0
@@ -18807,7 +19033,7 @@ GameObject:
   - component: {fileID: 1954496784}
   - component: {fileID: 1954496783}
   m_Layer: 9
-  m_Name: Box27 (1)
+  m_Name: Box72
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19006,7 +19232,7 @@ GameObject:
   - component: {fileID: 1962204796}
   - component: {fileID: 1962204797}
   m_Layer: 9
-  m_Name: Node29A
+  m_Name: Node62A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19047,31 +19273,7 @@ MonoBehaviour:
   excludedNodes: []
   gameEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6374139950399808139}
-        m_TargetAssemblyTypeName: RW.MonumentValley.Highlighter, Assembly-CSharp
-        m_MethodName: EnableHighlight
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 6374139950399808245}
-        m_TargetAssemblyTypeName: RW.MonumentValley.DragSpinner, Assembly-CSharp
-        m_MethodName: EnableSpinner
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &1965731358
 GameObject:
   m_ObjectHideFlags: 0
@@ -19084,7 +19286,7 @@ GameObject:
   - component: {fileID: 1965731361}
   - component: {fileID: 1965731360}
   m_Layer: 9
-  m_Name: SpinnerMesh
+  m_Name: SpinnerMesh2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19246,7 +19448,7 @@ GameObject:
   - component: {fileID: 1970319698}
   - component: {fileID: 1970319697}
   m_Layer: 9
-  m_Name: Node26
+  m_Name: Node59
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19269,9 +19471,9 @@ MonoBehaviour:
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   edges:
-  - neighbor: {fileID: 394063226}
+  - neighbor: {fileID: 1618267039}
     isActive: 1
-  - neighbor: {fileID: 575632585904296577}
+  - neighbor: {fileID: 394063226}
     isActive: 1
   excludedNodes:
   - {fileID: 300150545}
@@ -19334,7 +19536,7 @@ GameObject:
   - component: {fileID: 1999086719}
   - component: {fileID: 1999086718}
   m_Layer: 9
-  m_Name: Node30
+  m_Name: Node63
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19391,7 +19593,7 @@ GameObject:
   - component: {fileID: 2027515273}
   - component: {fileID: 2027515272}
   m_Layer: 9
-  m_Name: Box23
+  m_Name: Box33
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19512,7 +19714,7 @@ GameObject:
   - component: {fileID: 2047833251}
   - component: {fileID: 2047833250}
   m_Layer: 9
-  m_Name: Box32
+  m_Name: Box44
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19664,7 +19866,7 @@ GameObject:
   - component: {fileID: 2048346659}
   - component: {fileID: 2048346660}
   m_Layer: 9
-  m_Name: Node28
+  m_Name: Node75
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19701,9 +19903,7 @@ MonoBehaviour:
   defaultGizmoColor: {r: 0, g: 0, b: 0, a: 1}
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  edges:
-  - neighbor: {fileID: 1911275575}
-    isActive: 1
+  edges: []
   excludedNodes: []
   gameEvent:
     m_PersistentCalls:
@@ -19942,7 +20142,7 @@ GameObject:
   - component: {fileID: 2060678444}
   - component: {fileID: 2060678445}
   m_Layer: 9
-  m_Name: Node28
+  m_Name: Node81
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19979,9 +20179,7 @@ MonoBehaviour:
   defaultGizmoColor: {r: 0, g: 0, b: 0, a: 1}
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  edges:
-  - neighbor: {fileID: 1911275575}
-    isActive: 1
+  edges: []
   excludedNodes: []
   gameEvent:
     m_PersistentCalls:
@@ -20432,7 +20630,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 37
+  m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &2099557474
 GameObject:
@@ -20461,12 +20659,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2099557474}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: -1.25, z: 5}
+  m_LocalPosition: {x: 4.2, y: 2.9499998, z: 4.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 978233448}
-  m_RootOrder: 2
+  m_Father: {fileID: 0}
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &2099557477
 BoxCollider:
@@ -20550,7 +20748,7 @@ GameObject:
   - component: {fileID: 2102471882}
   - component: {fileID: 2102471883}
   m_Layer: 9
-  m_Name: NodeStairRamp1
+  m_Name: NodeStairRamp3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20588,9 +20786,9 @@ MonoBehaviour:
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   edges:
-  - neighbor: {fileID: 1141456813}
+  - neighbor: {fileID: 399583561}
     isActive: 1
-  - neighbor: {fileID: 1319892408}
+  - neighbor: {fileID: 1018583207}
     isActive: 1
   excludedNodes: []
   gameEvent:
@@ -20607,7 +20805,7 @@ GameObject:
   - component: {fileID: 2121357566}
   - component: {fileID: 2121357567}
   m_Layer: 9
-  m_Name: Node30C
+  m_Name: Node63C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20748,7 +20946,7 @@ GameObject:
   - component: {fileID: 2136382810}
   - component: {fileID: 2136382809}
   m_Layer: 9
-  m_Name: Box24
+  m_Name: Box68
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21963,7 +22161,7 @@ GameObject:
   - component: {fileID: 5233017716168461858}
   - component: {fileID: 5510223870293155419}
   m_Layer: 9
-  m_Name: Node25
+  m_Name: Node90
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21997,7 +22195,7 @@ GameObject:
   - component: {fileID: 5233017717494273218}
   - component: {fileID: 5510223868933817531}
   m_Layer: 9
-  m_Name: NodeStairRamp1
+  m_Name: NodeStairRamp5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22191,7 +22389,7 @@ PrefabInstance:
     - target: {fileID: 4914362807450694324, guid: 2230feb93c9fe496aa22349a4aad3007,
         type: 3}
       propertyPath: m_RootOrder
-      value: 31
+      value: 41
       objectReference: {fileID: 0}
     - target: {fileID: 4914362807450694324, guid: 2230feb93c9fe496aa22349a4aad3007,
         type: 3}
@@ -22751,7 +22949,7 @@ GameObject:
   - component: {fileID: 2757243750704973455}
   - component: {fileID: 2757243750704973440}
   m_Layer: 9
-  m_Name: StairRamp1
+  m_Name: StairRamp5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23797,7 +23995,7 @@ GameObject:
   - component: {fileID: 3890585625516941623}
   - component: {fileID: 3890585625516941608}
   m_Layer: 9
-  m_Name: Box25
+  m_Name: Box90
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23860,7 +24058,7 @@ Transform:
   - {fileID: 2061255174}
   - {fileID: 1959683679}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3970511119549101803
 MonoBehaviour:
@@ -24612,8 +24810,8 @@ Transform:
   - {fileID: 1274152633}
   - {fileID: 1781041380}
   - {fileID: 647715821}
-  - {fileID: 3244951531516058683}
   - {fileID: 1930557898}
+  - {fileID: 3244951531516058683}
   - {fileID: 1830392306}
   - {fileID: 843298288}
   - {fileID: 556521714}
@@ -24621,7 +24819,7 @@ Transform:
   - {fileID: 114036747}
   - {fileID: 4518785737297454363}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4125098053196020055
 GameObject:
@@ -24825,7 +25023,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4782087691319487719}
   m_Layer: 9
-  m_Name: Bridge
+  m_Name: Bridge1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24853,7 +25051,7 @@ Transform:
   - {fileID: 5032730897172417150}
   - {fileID: 5032730898005902279}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &4782087691536090049
 BoxCollider:
@@ -25118,7 +25316,7 @@ GameObject:
   - component: {fileID: 223588163416071664}
   - component: {fileID: 575632585944337801}
   m_Layer: 9
-  m_Name: Node25
+  m_Name: Node35
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25135,7 +25333,7 @@ GameObject:
   - component: {fileID: 223588164106799761}
   - component: {fileID: 575632585295583976}
   m_Layer: 9
-  m_Name: Node24
+  m_Name: Node34
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25169,7 +25367,7 @@ GameObject:
   - component: {fileID: 223588164561092210}
   - component: {fileID: 575632584807722507}
   m_Layer: 9
-  m_Name: Node26
+  m_Name: Node36
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25495,7 +25693,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &5478947649997727510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25518,14 +25716,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5478947649997727504}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 1.9999999, y: 0.5, z: 0}
+  m_LocalPosition: {x: 2, y: 0.5, z: -11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5478947649068180632}
   - {fileID: 543450652635769012}
   m_Father: {fileID: 0}
-  m_RootOrder: 36
+  m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &5492128862509865208
 GameObject:
@@ -25560,7 +25758,7 @@ MonoBehaviour:
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   edges:
-  - neighbor: {fileID: 0}
+  - neighbor: {fileID: 1305042994}
     isActive: 1
   - neighbor: {fileID: 1281453053}
     isActive: 1
@@ -26019,7 +26217,7 @@ GameObject:
   - component: {fileID: 7634470125070766444}
   - component: {fileID: 5627214099558180262}
   m_Layer: 9
-  m_Name: SpinnerMesh
+  m_Name: SpinnerMesh1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26242,7 +26440,7 @@ GameObject:
   - component: {fileID: 6374139950399808139}
   - component: {fileID: 1867387197}
   m_Layer: 9
-  m_Name: SpinnerControl
+  m_Name: SpinnerControl1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26996,7 +27194,7 @@ GameObject:
   - component: {fileID: 8267055795536139772}
   - component: {fileID: 8267055795536139775}
   m_Layer: 9
-  m_Name: Box24
+  m_Name: Box34
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27036,7 +27234,7 @@ GameObject:
   - component: {fileID: 8267055795306699077}
   - component: {fileID: 8267055795306699076}
   m_Layer: 9
-  m_Name: Box25
+  m_Name: Box35
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27076,7 +27274,7 @@ GameObject:
   - component: {fileID: 8267055794472411502}
   - component: {fileID: 8267055794472411497}
   m_Layer: 9
-  m_Name: Box26
+  m_Name: Box36
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27144,7 +27342,7 @@ Transform:
   - {fileID: 2139876705}
   - {fileID: 414194011}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7593379126821263483
 GameObject:
@@ -27197,7 +27395,7 @@ Transform:
   - {fileID: 1724767994}
   - {fileID: 2078834391}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7612034340601935172
 MeshFilter:
@@ -28591,7 +28789,7 @@ PrefabInstance:
     - target: {fileID: 2823547015302497773, guid: d6088317baf1849ab9d8ddb5e9edea5d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 34
+      value: 44
       objectReference: {fileID: 0}
     - target: {fileID: 2823547015302497773, guid: d6088317baf1849ab9d8ddb5e9edea5d,
         type: 3}
