@@ -1,34 +1,4 @@
-﻿/*
- * Copyright (c) 2020 Razeware LLC
- * 
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- * 
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
- *
- * Notwithstanding the foregoing, you may not use, copy, modify, merge, publish, 
- * distribute, sublicense, create a derivative work, and/or sell copies of the 
- * Software in any work that is designed, intended, or marketed for pedagogical or 
- * instructional purposes related to programming, coding, application development, 
- * or information technology.  Permission for such use, copying, modification,
- * merger, publication, distribution, sublicensing, creation of derivative works, 
- * or sale is expressly withheld.
- *    
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- * THE SOFTWARE.
- */
-
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
@@ -46,35 +16,35 @@ namespace RW.MonumentValley
             Z
         }
 
-        // transform to spin
+        // 회전할 target transform
         [SerializeField] private Transform targetToSpin;
 
-        // axis of rotation
+        // 회전축
         [SerializeField] private SpinAxis spinAxis = SpinAxis.X;
 
-        // used to calculate angle to mouse pointer
+        // 마우스 포인터 각도를 계산할 pivot
         [SerializeField] private Transform pivot;
 
-        // minimum distance in pixels before activating mouse drag
+        // 최소 드래그 거리 값
         [SerializeField] private int minDragDist = 10;
 
         //[SerializeField] private Linker linker;
 
-        // vector from pivot to mouse pointer
+        // pivot에서 마우스 포인터까지의 벡터
         private Vector2 directionToMouse;
 
-        // are we currently spinning?
+        // 회전 중인지 여부 체크
         private bool isSpinning;
 
         private bool isActive;
 
-        // angle (degrees) from clicked screen position 
+        // 화면을 클릭한 지점으로부터의 각도
         private float angleToMouse;
 
-        // angle to mouse on previous frame
+        // 이전 프레임에서 마우스 각도
         private float previousAngleToMouse;
 
-        // Vector representing axis of rotation
+        // 회전축 벡터
         private Vector3 axisDirection;
 
         public UnityEvent snapEvent;
@@ -108,16 +78,16 @@ namespace RW.MonumentValley
 
             isSpinning = true;
 
-            // get the angle to the mouse position on down frame
+            // 클릭한 마우스 포지션까지의 벡터 
             Vector3 inputPosition = new Vector3(data.position.x, data.position.y, 0f);
             directionToMouse = inputPosition - Camera.main.WorldToScreenPoint(pivot.position);
 
-            // store the angle to mouse pointer on down frame
+            // 마우스 포인터 각도 저장
             previousAngleToMouse = Mathf.Atan2(directionToMouse.y, directionToMouse.x) * Mathf.Rad2Deg;
 
         }
 
-        // end spin on mouse release; then round to right angle
+        // 드래그 동작이 끝났을 때
         public void OnEndDrag(PointerEventData data)
         {
             if (isActive)
@@ -130,38 +100,37 @@ namespace RW.MonumentValley
         {
             if (isSpinning && Camera.main != null && pivot != null && isActive)
             {
-                // get the angle to the current mouse position
+                // 현재 마우스 포지션 각도
                 Vector3 inputPosition = new Vector3(data.position.x, data.position.y, 0f);
                 directionToMouse = inputPosition - Camera.main.WorldToScreenPoint(pivot.position);
                 angleToMouse = Mathf.Atan2(directionToMouse.y, directionToMouse.x) * Mathf.Rad2Deg;
 
-                // if we have dragged a minimum threshold, rotate the target to follow the mouse movements around the pivot
-                // (left-handed coordinate system; positive rotations are clockwise)
+                // 최소 드래그 값보다 더 드래그했을 경우
                 if (directionToMouse.magnitude > minDragDist)
                 {
                     Vector3 newRotationVector = (previousAngleToMouse - angleToMouse) * axisDirection;
-                    targetToSpin.Rotate(newRotationVector);
+                    targetToSpin.Rotate(newRotationVector); // 타겟을 회전시킴
                     previousAngleToMouse = angleToMouse;
                 }
             }
         }
 
-        // release and snap to 90-degrees interval
+        // 90도 간격으로 회전 가능
         private void SnapSpinner()
         {
             isSpinning = false;
 
-            // snap to nearest 90-degree interval
+            // 가장 가까운 90도 간격으로 회전
             RoundToRightAngles(targetToSpin);
 
-            // invoke event (e.g. to update the SpinnerControl)
+            // snap 이벤트 invoke
             if (snapEvent != null)
             {
                 snapEvent.Invoke();
             }
         }
 
-        // round to nearest 90 degrees
+        // 가장 가까운 90도 반환
         private void RoundToRightAngles(Transform xform)
         {
             float roundedXAngle = Mathf.Round(xform.eulerAngles.x / 90f) * 90f;
@@ -171,7 +140,7 @@ namespace RW.MonumentValley
             xform.eulerAngles = new Vector3(roundedXAngle, roundedYAngle, roundedZAngle);
         }
 
-        //enable/disable
+        // 스피너 enable/disable
         public void EnableSpinner(bool state)
         {
             isActive = state;
@@ -182,8 +151,5 @@ namespace RW.MonumentValley
                 SnapSpinner();
             }
         }
-
-
     }
-
 }

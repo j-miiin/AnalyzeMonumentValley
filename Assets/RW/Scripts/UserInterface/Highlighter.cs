@@ -36,10 +36,10 @@ namespace RW.MonumentValley
     [RequireComponent(typeof(Collider))]
     public class Highlighter : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
-        // reference to MeshRenderer component
+        // 스피너 오브젝트의 mesh renderer
         [SerializeField] private MeshRenderer[] meshRenderers;
 
-        // Property Reference from Shader Graph
+        // Shader Graph 프로퍼티
         [SerializeField] private string highlightProperty = "_IsHighlighted";
 
         private bool isEnabled;
@@ -49,11 +49,11 @@ namespace RW.MonumentValley
         private void Start()
         {
             isEnabled = true;
-            // use non-highlighted material by default
+            // 초기 기본 상태는 스피너의 불이 꺼져있음
             ToggleHighlight(false);
         }
 
-        // toggle glow on or off using Shader Graph property
+        // Shader Graph 프로퍼티로 스피너의 불 on/off
         public void ToggleHighlight(bool onOff)
         {
             foreach (MeshRenderer meshRenderer in meshRenderers)
@@ -65,7 +65,7 @@ namespace RW.MonumentValley
             }
         }
 
-        // master toggle (off overrides highlight state)
+        // state 값에 따라 하이라이트 여부 set
         public void EnableHighlight(bool state)
         {
             isEnabled = state;
