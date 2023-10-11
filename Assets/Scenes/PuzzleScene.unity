@@ -219,6 +219,8 @@ GameObject:
   - component: {fileID: 30769415}
   - component: {fileID: 30769417}
   - component: {fileID: 30769416}
+  - component: {fileID: 30769419}
+  - component: {fileID: 30769418}
   m_Layer: 9
   m_Name: Box55
   m_TagString: Untagged
@@ -292,6 +294,39 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 30769414}
   m_Mesh: {fileID: -3262789968867269347, guid: cb43d1fe393e54be78d018ccb7093ba4, type: 3}
+--- !u!114 &30769418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30769414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e25d6124f98943dcbee43608a4d73b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &30769419
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30769414}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &48651427
 GameObject:
   m_ObjectHideFlags: 0
@@ -1082,7 +1117,7 @@ MonoBehaviour:
   gameEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6374139950399808245}
+      - m_Target: {fileID: 1900569460}
         m_TargetAssemblyTypeName: RW.MonumentValley.DragSpinner, Assembly-CSharp
         m_MethodName: EnableSpinner
         m_Mode: 6
@@ -1094,7 +1129,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 6374139950399808139}
+      - m_Target: {fileID: 1900569459}
         m_TargetAssemblyTypeName: RW.MonumentValley.Highlighter, Assembly-CSharp
         m_MethodName: EnableHighlight
         m_Mode: 6
@@ -1342,7 +1377,31 @@ MonoBehaviour:
   - {fileID: 846326491}
   gameEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 482295354}
+        m_TargetAssemblyTypeName: RW.MonumentValley.DragSpinner, Assembly-CSharp
+        m_MethodName: EnableSpinner
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 482295353}
+        m_TargetAssemblyTypeName: RW.MonumentValley.Highlighter, Assembly-CSharp
+        m_MethodName: EnableHighlight
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &180409173
 GameObject:
   m_ObjectHideFlags: 0
@@ -1476,17 +1535,17 @@ PrefabInstance:
     - target: {fileID: 1595454393995855596, guid: 3048fb8c2869b47ec98cbccf029e4165,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.75
+      value: 21.15
       objectReference: {fileID: 0}
     - target: {fileID: 1595454393995855596, guid: 3048fb8c2869b47ec98cbccf029e4165,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.5
+      value: 14.15
       objectReference: {fileID: 0}
     - target: {fileID: 1595454393995855596, guid: 3048fb8c2869b47ec98cbccf029e4165,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.73
+      value: -12.15
       objectReference: {fileID: 0}
     - target: {fileID: 1595454393995855596, guid: 3048fb8c2869b47ec98cbccf029e4165,
         type: 3}
@@ -2492,17 +2551,17 @@ PrefabInstance:
     - target: {fileID: 1595454393995855596, guid: 3048fb8c2869b47ec98cbccf029e4165,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.6
+      value: 23.37
       objectReference: {fileID: 0}
     - target: {fileID: 1595454393995855596, guid: 3048fb8c2869b47ec98cbccf029e4165,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.7
+      value: 16.5
       objectReference: {fileID: 0}
     - target: {fileID: 1595454393995855596, guid: 3048fb8c2869b47ec98cbccf029e4165,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.4
+      value: -4.35
       objectReference: {fileID: 0}
     - target: {fileID: 1595454393995855596, guid: 3048fb8c2869b47ec98cbccf029e4165,
         type: 3}
@@ -3885,7 +3944,7 @@ MonoBehaviour:
   gameEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6374139950399808245}
+      - m_Target: {fileID: 1900569460}
         m_TargetAssemblyTypeName: RW.MonumentValley.DragSpinner, Assembly-CSharp
         m_MethodName: EnableSpinner
         m_Mode: 6
@@ -3897,7 +3956,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 6374139950399808139}
+      - m_Target: {fileID: 1900569459}
         m_TargetAssemblyTypeName: RW.MonumentValley.Highlighter, Assembly-CSharp
         m_MethodName: EnableHighlight
         m_Mode: 6
@@ -4605,34 +4664,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationLinks:
-  - linkedTransform: {fileID: 4782087691319487719}
+  - linkedTransform: {fileID: 982960766}
     activeEulerAngle: {x: 90, y: 0, z: 0}
     nodeA: {fileID: 1371602401}
     nodeB: {fileID: 1439214001}
-  - linkedTransform: {fileID: 4782087691319487719}
+  - linkedTransform: {fileID: 982960766}
     activeEulerAngle: {x: 90, y: 0, z: 0}
     nodeA: {fileID: 1948249906}
     nodeB: {fileID: 700322751}
-  - linkedTransform: {fileID: 4782087691319487719}
+  - linkedTransform: {fileID: 215218776}
     activeEulerAngle: {x: 270, y: 0, z: 0}
-    nodeA: {fileID: 1910588511}
-    nodeB: {fileID: 1439214001}
-  - linkedTransform: {fileID: 4782087691319487719}
-    activeEulerAngle: {x: 270, y: 0, z: 0}
-    nodeA: {fileID: 846326491}
-    nodeB: {fileID: 1274136649}
-  - linkedTransform: {fileID: 4782087691319487719}
-    activeEulerAngle: {x: 180, y: 0, z: 0}
-    nodeA: {fileID: 1439214001}
-    nodeB: {fileID: 712546347}
-  - linkedTransform: {fileID: 4782087691319487719}
-    activeEulerAngle: {x: 180, y: 0, z: 0}
-    nodeA: {fileID: 152814142}
-    nodeB: {fileID: 1132165243}
-  - linkedTransform: {fileID: 4782087691319487719}
+    nodeA: {fileID: 1948249906}
+    nodeB: {fileID: 700322751}
+  - linkedTransform: {fileID: 982960766}
     activeEulerAngle: {x: 180, y: 0, z: 0}
     nodeA: {fileID: 152814142}
     nodeB: {fileID: 1637945373}
+  - linkedTransform: {fileID: 982960766}
+    activeEulerAngle: {x: 180, y: 0, z: 0}
+    nodeA: {fileID: 152814142}
+    nodeB: {fileID: 1132165243}
+  - linkedTransform: {fileID: 982960766}
+    activeEulerAngle: {x: 180, y: 0, z: 0}
+    nodeA: {fileID: 712546347}
+    nodeB: {fileID: 1439214001}
+  - linkedTransform: {fileID: 982960766}
+    activeEulerAngle: {x: 270, y: 0, z: 0}
+    nodeA: {fileID: 1910588511}
+    nodeB: {fileID: 1439214001}
+  - linkedTransform: {fileID: 982960766}
+    activeEulerAngle: {x: 270, y: 0, z: 0}
+    nodeA: {fileID: 846326491}
+    nodeB: {fileID: 1274136649}
+  - linkedTransform: {fileID: 982960766}
+    activeEulerAngle: {x: 0, y: 0, z: 0}
+    nodeA: {fileID: 648936715}
+    nodeB: {fileID: 1439214001}
 --- !u!114 &482295353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5173,7 +5240,9 @@ MonoBehaviour:
   defaultGizmoColor: {r: 0, g: 0, b: 0, a: 1}
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  edges: []
+  edges:
+  - neighbor: {fileID: 614774298}
+    isActive: 1
   excludedNodes: []
   gameEvent:
     m_PersistentCalls:
@@ -5865,7 +5934,7 @@ MonoBehaviour:
   gameEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6374139950399808245}
+      - m_Target: {fileID: 482295354}
         m_TargetAssemblyTypeName: RW.MonumentValley.DragSpinner, Assembly-CSharp
         m_MethodName: EnableSpinner
         m_Mode: 6
@@ -5877,7 +5946,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 6374139950399808139}
+      - m_Target: {fileID: 482295353}
         m_TargetAssemblyTypeName: RW.MonumentValley.Highlighter, Assembly-CSharp
         m_MethodName: EnableHighlight
         m_Mode: 6
@@ -6134,15 +6203,63 @@ MonoBehaviour:
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   edges:
-  - neighbor: {fileID: 507661388}
+  - neighbor: {fileID: 393821201}
     isActive: 1
-  - neighbor: {fileID: 792198168}
+  - neighbor: {fileID: 1948249906}
     isActive: 1
   excludedNodes:
   - {fileID: 745052973}
   gameEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 482295354}
+        m_TargetAssemblyTypeName: RW.MonumentValley.DragSpinner, Assembly-CSharp
+        m_MethodName: EnableSpinner
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 482295353}
+        m_TargetAssemblyTypeName: RW.MonumentValley.Highlighter, Assembly-CSharp
+        m_MethodName: EnableHighlight
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1900569460}
+        m_TargetAssemblyTypeName: RW.MonumentValley.DragSpinner, Assembly-CSharp
+        m_MethodName: EnableSpinner
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1900569459}
+        m_TargetAssemblyTypeName: RW.MonumentValley.Highlighter, Assembly-CSharp
+        m_MethodName: EnableHighlight
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &700322752
 Transform:
   m_ObjectHideFlags: 0
@@ -6215,7 +6332,7 @@ MonoBehaviour:
   gameEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6374139950399808245}
+      - m_Target: {fileID: 482295354}
         m_TargetAssemblyTypeName: RW.MonumentValley.DragSpinner, Assembly-CSharp
         m_MethodName: EnableSpinner
         m_Mode: 6
@@ -6227,7 +6344,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 6374139950399808139}
+      - m_Target: {fileID: 482295353}
         m_TargetAssemblyTypeName: RW.MonumentValley.Highlighter, Assembly-CSharp
         m_MethodName: EnableHighlight
         m_Mode: 6
@@ -6401,7 +6518,7 @@ MonoBehaviour:
   gameEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6374139950399808245}
+      - m_Target: {fileID: 1900569460}
         m_TargetAssemblyTypeName: RW.MonumentValley.DragSpinner, Assembly-CSharp
         m_MethodName: EnableSpinner
         m_Mode: 6
@@ -6413,7 +6530,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 6374139950399808139}
+      - m_Target: {fileID: 1900569459}
         m_TargetAssemblyTypeName: RW.MonumentValley.Highlighter, Assembly-CSharp
         m_MethodName: EnableHighlight
         m_Mode: 6
@@ -6539,9 +6656,7 @@ MonoBehaviour:
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   edges:
-  - neighbor: {fileID: 1515271973}
-    isActive: 1
-  - neighbor: {fileID: 575632585904296577}
+  - neighbor: {fileID: 562514026}
     isActive: 1
   excludedNodes:
   - {fileID: 700322751}
@@ -8008,7 +8123,31 @@ MonoBehaviour:
   - {fileID: 1948249906}
   gameEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 482295354}
+        m_TargetAssemblyTypeName: RW.MonumentValley.DragSpinner, Assembly-CSharp
+        m_MethodName: EnableSpinner
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 482295353}
+        m_TargetAssemblyTypeName: RW.MonumentValley.Highlighter, Assembly-CSharp
+        m_MethodName: EnableHighlight
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &846326492
 Transform:
   m_ObjectHideFlags: 0
@@ -9349,6 +9488,8 @@ MonoBehaviour:
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   edges:
   - neighbor: {fileID: 76803254}
+    isActive: 1
+  - neighbor: {fileID: 2121357567}
     isActive: 1
   excludedNodes:
   - {fileID: 1947806040}
@@ -10725,31 +10866,7 @@ MonoBehaviour:
   excludedNodes: []
   gameEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1900569459}
-        m_TargetAssemblyTypeName: RW.MonumentValley.Highlighter, Assembly-CSharp
-        m_MethodName: EnableHighlight
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1900569460}
-        m_TargetAssemblyTypeName: RW.MonumentValley.DragSpinner, Assembly-CSharp
-        m_MethodName: EnableSpinner
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &1101656654
 GameObject:
   m_ObjectHideFlags: 0
@@ -11148,7 +11265,31 @@ MonoBehaviour:
   excludedNodes: []
   gameEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 482295354}
+        m_TargetAssemblyTypeName: RW.MonumentValley.DragSpinner, Assembly-CSharp
+        m_MethodName: EnableSpinner
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 482295353}
+        m_TargetAssemblyTypeName: RW.MonumentValley.Highlighter, Assembly-CSharp
+        m_MethodName: EnableHighlight
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &1137929109
 GameObject:
   m_ObjectHideFlags: 0
@@ -11329,7 +11470,31 @@ MonoBehaviour:
   excludedNodes: []
   gameEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1900569459}
+        m_TargetAssemblyTypeName: RW.MonumentValley.Highlighter, Assembly-CSharp
+        m_MethodName: EnableHighlight
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1900569460}
+        m_TargetAssemblyTypeName: RW.MonumentValley.DragSpinner, Assembly-CSharp
+        m_MethodName: EnableSpinner
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &1174674288
 GameObject:
   m_ObjectHideFlags: 0
@@ -11551,6 +11716,8 @@ GameObject:
   - component: {fileID: 1183670955}
   - component: {fileID: 1183670957}
   - component: {fileID: 1183670956}
+  - component: {fileID: 1183670959}
+  - component: {fileID: 1183670958}
   m_Layer: 9
   m_Name: Box56
   m_TagString: Untagged
@@ -11624,6 +11791,39 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1183670954}
   m_Mesh: {fileID: -3262789968867269347, guid: cb43d1fe393e54be78d018ccb7093ba4, type: 3}
+--- !u!114 &1183670958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183670954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e25d6124f98943dcbee43608a4d73b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1183670959
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183670954}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1184743308
 GameObject:
   m_ObjectHideFlags: 0
@@ -11988,6 +12188,8 @@ GameObject:
   - component: {fileID: 1271166428}
   - component: {fileID: 1271166430}
   - component: {fileID: 1271166429}
+  - component: {fileID: 1271166432}
+  - component: {fileID: 1271166431}
   m_Layer: 9
   m_Name: Box52
   m_TagString: Untagged
@@ -12061,6 +12263,39 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1271166427}
   m_Mesh: {fileID: -3262789968867269347, guid: cb43d1fe393e54be78d018ccb7093ba4, type: 3}
+--- !u!114 &1271166431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1271166427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e25d6124f98943dcbee43608a4d73b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1271166432
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1271166427}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1272285838
 GameObject:
   m_ObjectHideFlags: 0
@@ -12072,6 +12307,8 @@ GameObject:
   - component: {fileID: 1272285839}
   - component: {fileID: 1272285841}
   - component: {fileID: 1272285840}
+  - component: {fileID: 1272285843}
+  - component: {fileID: 1272285842}
   m_Layer: 9
   m_Name: Box53
   m_TagString: Untagged
@@ -12145,6 +12382,39 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1272285838}
   m_Mesh: {fileID: -3262789968867269347, guid: cb43d1fe393e54be78d018ccb7093ba4, type: 3}
+--- !u!114 &1272285842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272285838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e25d6124f98943dcbee43608a4d73b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1272285843
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272285838}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1274136647
 GameObject:
   m_ObjectHideFlags: 0
@@ -12194,15 +12464,15 @@ MonoBehaviour:
   selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
   inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   edges:
-  - neighbor: {fileID: 3970511120824626084}
+  - neighbor: {fileID: 846326491}
     isActive: 1
   excludedNodes: []
   gameEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6374139950399808139}
-        m_TargetAssemblyTypeName: RW.MonumentValley.Highlighter, Assembly-CSharp
-        m_MethodName: EnableHighlight
+      - m_Target: {fileID: 482295354}
+        m_TargetAssemblyTypeName: RW.MonumentValley.DragSpinner, Assembly-CSharp
+        m_MethodName: EnableSpinner
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12212,9 +12482,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 6374139950399808245}
-        m_TargetAssemblyTypeName: RW.MonumentValley.DragSpinner, Assembly-CSharp
-        m_MethodName: EnableSpinner
+      - m_Target: {fileID: 482295353}
+        m_TargetAssemblyTypeName: RW.MonumentValley.Highlighter, Assembly-CSharp
+        m_MethodName: EnableHighlight
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13280,7 +13550,7 @@ MonoBehaviour:
   gameEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6374139950399808245}
+      - m_Target: {fileID: 482295354}
         m_TargetAssemblyTypeName: RW.MonumentValley.DragSpinner, Assembly-CSharp
         m_MethodName: EnableSpinner
         m_Mode: 6
@@ -13292,7 +13562,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 6374139950399808139}
+      - m_Target: {fileID: 482295353}
         m_TargetAssemblyTypeName: RW.MonumentValley.Highlighter, Assembly-CSharp
         m_MethodName: EnableHighlight
         m_Mode: 6
@@ -13677,7 +13947,31 @@ MonoBehaviour:
   excludedNodes: []
   gameEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 482295354}
+        m_TargetAssemblyTypeName: RW.MonumentValley.DragSpinner, Assembly-CSharp
+        m_MethodName: EnableSpinner
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 482295353}
+        m_TargetAssemblyTypeName: RW.MonumentValley.Highlighter, Assembly-CSharp
+        m_MethodName: EnableHighlight
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &1445660388
 GameObject:
   m_ObjectHideFlags: 0
@@ -14428,7 +14722,7 @@ MonoBehaviour:
   gameEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6374139950399808245}
+      - m_Target: {fileID: 1900569460}
         m_TargetAssemblyTypeName: RW.MonumentValley.DragSpinner, Assembly-CSharp
         m_MethodName: EnableSpinner
         m_Mode: 6
@@ -14440,7 +14734,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 6374139950399808139}
+      - m_Target: {fileID: 1900569459}
         m_TargetAssemblyTypeName: RW.MonumentValley.Highlighter, Assembly-CSharp
         m_MethodName: EnableHighlight
         m_Mode: 6
@@ -14780,31 +15074,7 @@ MonoBehaviour:
   excludedNodes: []
   gameEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6374139950399808139}
-        m_TargetAssemblyTypeName: RW.MonumentValley.Highlighter, Assembly-CSharp
-        m_MethodName: EnableHighlight
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 6374139950399808245}
-        m_TargetAssemblyTypeName: RW.MonumentValley.DragSpinner, Assembly-CSharp
-        m_MethodName: EnableSpinner
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &1560875294
 GameObject:
   m_ObjectHideFlags: 0
@@ -15108,6 +15378,8 @@ GameObject:
   - component: {fileID: 1571915601}
   - component: {fileID: 1571915603}
   - component: {fileID: 1571915602}
+  - component: {fileID: 1571915605}
+  - component: {fileID: 1571915604}
   m_Layer: 9
   m_Name: Box54
   m_TagString: Untagged
@@ -15181,6 +15453,39 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1571915600}
   m_Mesh: {fileID: -3262789968867269347, guid: cb43d1fe393e54be78d018ccb7093ba4, type: 3}
+--- !u!114 &1571915604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571915600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e25d6124f98943dcbee43608a4d73b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1571915605
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571915600}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1580640326
 GameObject:
   m_ObjectHideFlags: 0
@@ -15795,7 +16100,31 @@ MonoBehaviour:
   excludedNodes: []
   gameEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 482295354}
+        m_TargetAssemblyTypeName: RW.MonumentValley.DragSpinner, Assembly-CSharp
+        m_MethodName: EnableSpinner
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 482295353}
+        m_TargetAssemblyTypeName: RW.MonumentValley.Highlighter, Assembly-CSharp
+        m_MethodName: EnableHighlight
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &1662210195
 GameObject:
   m_ObjectHideFlags: 0
@@ -17649,22 +17978,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationLinks:
-  - linkedTransform: {fileID: 4782087691319487719}
+  - linkedTransform: {fileID: 215218776}
     activeEulerAngle: {x: 90, y: 0, z: 0}
     nodeA: {fileID: 1141456813}
     nodeB: {fileID: 719915319}
-  - linkedTransform: {fileID: 4782087691319487719}
-    activeEulerAngle: {x: 270, y: 0, z: 0}
+  - linkedTransform: {fileID: 215218776}
+    activeEulerAngle: {x: 180, y: 0, z: 0}
     nodeA: {fileID: 1141456813}
-    nodeB: {fileID: 129952413}
-  - linkedTransform: {fileID: 4782087691319487719}
-    activeEulerAngle: {x: 270, y: 0, z: 0}
-    nodeA: {fileID: 700322751}
-    nodeB: {fileID: 1948249906}
-  - linkedTransform: {fileID: 4782087691319487719}
+    nodeB: {fileID: 1517540548}
+  - linkedTransform: {fileID: 215218776}
     activeEulerAngle: {x: 180, y: 0, z: 0}
     nodeA: {fileID: 614774298}
     nodeB: {fileID: 571995652}
+  - linkedTransform: {fileID: 215218776}
+    activeEulerAngle: {x: 270, y: 0, z: 0}
+    nodeA: {fileID: 1141456813}
+    nodeB: {fileID: 129952413}
+  - linkedTransform: {fileID: 215218776}
+    activeEulerAngle: {x: 270, y: 0, z: 0}
+    nodeA: {fileID: 700322751}
+    nodeB: {fileID: 1948249906}
+  - linkedTransform: {fileID: 982960766}
+    activeEulerAngle: {x: 90, y: 0, z: 0}
+    nodeA: {fileID: 700322751}
+    nodeB: {fileID: 1948249906}
+  - linkedTransform: {fileID: 215218776}
+    activeEulerAngle: {x: 0, y: 0, z: 0}
+    nodeA: {fileID: 1141456813}
+    nodeB: {fileID: 427776320}
 --- !u!114 &1900569459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17814,7 +18155,7 @@ MonoBehaviour:
   gameEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6374139950399808245}
+      - m_Target: {fileID: 482295354}
         m_TargetAssemblyTypeName: RW.MonumentValley.DragSpinner, Assembly-CSharp
         m_MethodName: EnableSpinner
         m_Mode: 6
@@ -17826,7 +18167,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 6374139950399808139}
+      - m_Target: {fileID: 482295353}
         m_TargetAssemblyTypeName: RW.MonumentValley.Highlighter, Assembly-CSharp
         m_MethodName: EnableHighlight
         m_Mode: 6
@@ -17838,65 +18179,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!1 &1911275573
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1911275574}
-  - component: {fileID: 1911275575}
-  m_Layer: 9
-  m_Name: Node26D
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1911275574
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1911275573}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.5, z: 0.000000059604645}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4782087691536090053}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1911275575
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1911275573}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e382c44da12f4d2a83df3044cc89bf8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gizmoRadius: 0.1
-  defaultGizmoColor: {r: 0, g: 0, b: 0, a: 1}
-  selectedGizmoColor: {r: 0, g: 0, b: 1, a: 1}
-  inactiveGizmoColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  edges:
-  - neighbor: {fileID: 365145414}
-    isActive: 1
-  - neighbor: {fileID: 1840798608}
-    isActive: 1
-  excludedNodes:
-  - {fileID: 3970511119768593413}
-  - {fileID: 3970511120824626084}
-  gameEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &1912785878
 GameObject:
   m_ObjectHideFlags: 0
@@ -18597,6 +18879,30 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1900569460}
+        m_TargetAssemblyTypeName: RW.MonumentValley.DragSpinner, Assembly-CSharp
+        m_MethodName: EnableSpinner
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1900569459}
+        m_TargetAssemblyTypeName: RW.MonumentValley.Highlighter, Assembly-CSharp
+        m_MethodName: EnableHighlight
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!4 &1948249907
 Transform:
@@ -24340,8 +24646,6 @@ MonoBehaviour:
   edges:
   - neighbor: {fileID: 3970511119668063204}
     isActive: 1
-  - neighbor: {fileID: 575632585904296577}
-    isActive: 1
   excludedNodes:
   - {fileID: 3970511120824626084}
   gameEvent:
@@ -25050,7 +25354,6 @@ Transform:
   m_Children:
   - {fileID: 3746221223969043580}
   - {fileID: 3746221222938213341}
-  - {fileID: 1911275574}
   m_Father: {fileID: 4782087691319487719}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -25636,7 +25939,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5478947649997727504}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -7.38, y: 0.5, z: -6.86}
+  m_LocalPosition: {x: 11.64, y: 8.5, z: -7.96}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
