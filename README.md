@@ -41,7 +41,7 @@
 ![슬라이드13](https://github.com/j-miiin/AnalyzeMonumentValley/assets/62470991/53d032ec-f61e-4d52-b343-af2bd0d57d87)
 ![슬라이드14](https://github.com/j-miiin/AnalyzeMonumentValley/assets/62470991/e6dee4e0-ff00-417c-afa6-b16a9ace1e9a)
 ![슬라이드15](https://github.com/j-miiin/AnalyzeMonumentValley/assets/62470991/3f939932-1ce2-46b5-92f2-55bc2be0ac1f)
-![슬라이드16](https://github.com/j-miiin/AnalyzeMonumentValley/assets/62470991/fde971d3-6c84-4b53-92ff-2fbf9ea93fbd)
+![슬라이드16](https://github.com/j-miiin/AnalyzeMonumentValley/assets/62470991/514012dd-ca70-48ce-81df-2f7fd5ed8089)
 ![슬라이드17](https://github.com/j-miiin/AnalyzeMonumentValley/assets/62470991/88c44c36-0a9c-4ada-b93c-db0ccb068210)
 
 <br>
