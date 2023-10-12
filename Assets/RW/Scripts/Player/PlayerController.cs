@@ -1,54 +1,21 @@
-﻿
-/*
- * Copyright (c) 2020 Razeware LLC
- * 
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- * 
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
- *
- * Notwithstanding the foregoing, you may not use, copy, modify, merge, publish, 
- * distribute, sublicense, create a derivative work, and/or sell copies of the 
- * Software in any work that is designed, intended, or marketed for pedagogical or 
- * instructional purposes related to programming, coding, application development, 
- * or information technology.  Permission for such use, copying, modification,
- * merger, publication, distribution, sublicensing, creation of derivative works, 
- * or sale is expressly withheld.
- *    
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- * THE SOFTWARE.
- */
-
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 namespace RW.MonumentValley
 {
-    // handles Player input and movement
+    // Player의 Input과 움직임을 처리
     [RequireComponent(typeof(PlayerAnimation))]
     public class PlayerController : MonoBehaviour
     {
-
-        //  time to move one unit
+        // 한 unit을 이동하는 시간
         [Range(0.25f, 2f)]
         [SerializeField] private float moveTime = 0.5f;
 
-        // click indicator
+        // 클릭 indicator
         [SerializeField] Cursor cursor;
 
-        // cursor AnimationController
+        // 커서 애니메이션 컨트롤러
         private Animator cursorAnimController;
 
         // pathfinding fields
@@ -81,16 +48,16 @@ namespace RW.MonumentValley
 
         private void Start()
         {
-            // always start on a Node
+            // 항상 노드에서 시작
             SnapToNearestNode();
 
-            // automatically set the Graph's StartNode 
+            // Graph의 시작 노드 set
             if (pathfinder != null && !pathfinder.SearchOnStart)
             {
                 pathfinder.SetStartNode(transform.position);
             }
 
-            //listen to all clickEvents
+            // 모든 클릭 이벤트 listen
             foreach (Clickable c in clickables)
             {
                 c.clickAction += OnClick;
@@ -113,35 +80,33 @@ namespace RW.MonumentValley
                 return;
             }
 
-            // find the best path to the any Nodes under the Clickable; gives the user some flexibility
+            // Clickable 노드 중 가장 최적의 경로를 찾음
             List<Node> newPath = pathfinder.FindBestPath(currentNode, clickable.ChildNodes);
 
-            // if we are already moving and we click again, stop all previous Animation/motion
+            // 이미 움직이는 도중 클릭하면 이전의 애니메이션과 모션을 모두 멈춤
             if (isMoving)
             {
                 StopAllCoroutines();
             }
 
-            // show a marker for the mouse click
+            // 마우스 클릭에 마커를 보여줌
             if (cursor != null)
             {
                 cursor.ShowCursor(position);
             }
 
-            // if we have a valid path, follow it
+            // 유효한 경로가 있다면 따라감
             if (newPath.Count > 1)
             {
                 StartCoroutine(FollowPathRoutine(newPath));
             }
             else
             {
-                // otherwise, invalid path, stop movement
+                // 유효한 경로가 없다면 움직임을 멈춤
                 isMoving = false;
                 UpdateAnimation();
             }
         }
-
-
 
         private IEnumerator FollowPathRoutine(List<Node> path)
         {
@@ -156,52 +121,49 @@ namespace RW.MonumentValley
             {
                 UpdateAnimation();
 
-                // loop through all Nodes
+                // 모든 노드를 순회
                 for (int i = 0; i < path.Count; i++)
                 {
-                    // use the current Node as the next waypoint
+                    // 다음에 갈 포인트로 현재 노드를 사용
                     nextNode = path[i];
 
-                    // aim at the Node after that to minimize flipping
+                    // flip 최소화를 위해 다음 노드를 바라봄
                     int nextAimIndex = Mathf.Clamp(i + 1, 0, path.Count - 1);
                     Node aimNode = path[nextAimIndex];
                     FaceNextPosition(transform.position, aimNode.transform.position);
 
-                    // move to the next Node
+                    // 다음 노드로 이동
                     yield return StartCoroutine(MoveToNodeRoutine(transform.position, nextNode));
                 }
             }
 
             isMoving = false;
             UpdateAnimation();
-
         }
 
-        //  lerp to another Node from current position
+        // 현재 노드로부터 다른 노드까지의 lerp
         private IEnumerator MoveToNodeRoutine(Vector3 startPosition, Node targetNode)
         {
-
             float elapsedTime = 0;
 
-            // validate move time
+            // 유효한 이동 시간
             moveTime = Mathf.Clamp(moveTime, 0.1f, 5f);
 
             while (elapsedTime < moveTime && targetNode != null && !HasReachedNode(targetNode))
             {
-
                 elapsedTime += Time.deltaTime;
                 float lerpValue = Mathf.Clamp(elapsedTime / moveTime, 0f, 1f);
 
                 Vector3 targetPos = targetNode.transform.position;
                 transform.position = Vector3.Lerp(startPosition, targetPos, lerpValue);
 
-                // if over halfway, change parent to next node
+                // 반 이상 오면 다음 노드로 parent를 변경
                 if (lerpValue > 0.51f)
                 {
                     transform.parent = targetNode.transform;
                     currentNode = targetNode;
 
-                    // invoke UnityEvent associated with next Node
+                    // 다음 노드에 연결된 Event 실행
                     targetNode.gameEvent.Invoke();
                     //Debug.Log("invoked GameEvent from targetNode: " + targetNode.name);
                 }
@@ -211,7 +173,7 @@ namespace RW.MonumentValley
             }
         }
 
-        // snap the Player to the nearest Node in Game view
+        // 플레이어를 가장 가까운 노드에 위치시킴
         public void SnapToNearestNode()
         {
             Node nearestNode = graph?.FindClosestNode(transform.position);
@@ -263,7 +225,7 @@ namespace RW.MonumentValley
             }
         }
 
-        // have we reached a specific Node?
+        // 특정 노드에 도착했는지
         public bool HasReachedNode(Node node)
         {
             if (pathfinder == null || graph == null || node == null)

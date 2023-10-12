@@ -4,8 +4,7 @@ using UnityEngine.EventSystems;
 
 namespace RW.MonumentValley
 {
-
-    // allows a target Transform to be rotated based on mouse click and drag
+    // 타겟 transform을 마우스 클릭과 드래그로 회전
     [RequireComponent(typeof(Collider))]
     public class DragSpinner : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
     {
@@ -68,7 +67,7 @@ namespace RW.MonumentValley
             EnableSpinner(true);
         }
 
-        // begin spin drag
+        // 회전 드래그 시작
         public void OnBeginDrag(PointerEventData data)
         {
             if (!isActive)
@@ -84,7 +83,6 @@ namespace RW.MonumentValley
 
             // 마우스 포인터 각도 저장
             previousAngleToMouse = Mathf.Atan2(directionToMouse.y, directionToMouse.x) * Mathf.Rad2Deg;
-
         }
 
         // 드래그 동작이 끝났을 때
@@ -115,7 +113,7 @@ namespace RW.MonumentValley
             }
         }
 
-        // 90도 간격으로 회전 가능
+        // 90도 간격으로 snap 가능
         private void SnapSpinner()
         {
             isSpinning = false;

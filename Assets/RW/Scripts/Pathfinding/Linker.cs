@@ -1,58 +1,27 @@
-﻿/*
- * Copyright (c) 2020 Razeware LLC
- * 
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- * 
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
- *
- * Notwithstanding the foregoing, you may not use, copy, modify, merge, publish, 
- * distribute, sublicense, create a derivative work, and/or sell copies of the 
- * Software in any work that is designed, intended, or marketed for pedagogical or 
- * instructional purposes related to programming, coding, application development, 
- * or information technology.  Permission for such use, copying, modification,
- * merger, publication, distribution, sublicensing, creation of derivative works, 
- * or sale is expressly withheld.
- *    
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- * THE SOFTWARE.
- */
-
-
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace RW.MonumentValley
 {
-    // class to activate/deactivate special Edges between Nodes based on rotation
+    // 회전 값에 따라서 노드 사이의 특정 edge를 활성화/비활성화
     [System.Serializable]
     public class RotationLink
     {
-        // transform to check
+        // 회전을 체크할 transform
         public Transform linkedTransform;
 
-        // euler angle needed to activate link
+        // 링크 활성화를 위한 오일러 각도
         public Vector3 activeEulerAngle;
         [Header("Nodes to activate")]
         public Node nodeA;
         public Node nodeB;
     }
 
-    // activates or deactivates special Edges between Nodes
+    // 노드 사이 edge를 활성화/비활성화
     public class Linker : MonoBehaviour
     {
         [SerializeField] public RotationLink[] rotationLinks;
 
-        // toggle active state of Edge between neighbor Nodes
+        // 이웃하는 노드 사이 edge의 active 상태를 toggle
         public void EnableLink(Node nodeA, Node nodeB, bool state)
         {
             if (nodeA == null || nodeB == null)
@@ -62,7 +31,7 @@ namespace RW.MonumentValley
             nodeB.EnableEdge(nodeA, state);
         }
 
-        // enable/disable based on transform's euler angles
+        // 오일러 각도에 따라 enable/disable
         public void UpdateRotationLinks()
         {
             foreach (RotationLink l in rotationLinks)
@@ -70,11 +39,11 @@ namespace RW.MonumentValley
                 if (l.linkedTransform == null || l.nodeA == null || l.nodeB == null)
                     continue;
 
-                // check difference between desired and current angle
+                // 원하는 각도와 현재 각도의 차이를 구함
                 Quaternion targetAngle = Quaternion.Euler(l.activeEulerAngle);
                 float angleDiff = Quaternion.Angle(l.linkedTransform.rotation, targetAngle);
 
-                // enable the linked Edges if the angle matches; otherwise disable
+                // 각도가 일치하면 링크를 활성화, 아니라면 비활성화
                 if (Mathf.Abs(angleDiff) < 0.01f)
                 {
                     EnableLink(l.nodeA, l.nodeB, true);

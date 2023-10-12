@@ -6,26 +6,26 @@ using UnityEngine.Events;
 namespace RW.MonumentValley
 {
 
-    // monitors win condition and stops/pauses gameplay as needed
+    // win 조건과 필요에 따라 게임 정지를 모니터링
     public class GameManager : MonoBehaviour
     {
         // reference to player's controller component
         private PlayerController playerController;
 
-        // have we completed the win condition (i.e. reached the goal)?
+        // win 조건을 달성했는지
         private bool isGameOver;
         public bool IsGameOver => isGameOver;
 
-        // delay before restarting, etc.
+        // 재시작까지 딜레이 타임
         public float delayTime = 2f;
 
-        // invoked on awake
+        // awake 됐을 때 실행할 이벤트
         public UnityEvent awakeEvent;
 
-        // invoked when starting the level
+        // level을 시작할 때 실행할 이벤트
         public UnityEvent initEvent;
 
-        // invoked before ending the level
+        // ending level 전에 실행할 이벤트
         public UnityEvent endLevelEvent;
 
 
@@ -37,13 +37,13 @@ namespace RW.MonumentValley
             playerController = FindObjectOfType<PlayerController>();
         }
 
-        // invoke any events at the start of gameplay
+        // 게임 시작시의 이벤트 발생
         private void Start()
         {
             initEvent.Invoke();
         }
 
-        // check for win condition every frame
+        // 매 프레임 win 조건 확인
         private void Update()
         {
             if (playerController != null && playerController.HasReachedGoal())
@@ -52,24 +52,24 @@ namespace RW.MonumentValley
             }
         }
 
-        // win and end the level
+        // 이기고 레벨 종료
         private void Win()
         {
-            // flag to ensure Win only triggers once
+            // win trigger를 한 번 발생시키기 위한 flag
             if (isGameOver || playerController == null)
             {
                 return;
             }
             isGameOver = true;
 
-            // disable player controls
+            // player controller를 disable
             playerController.EnableControls(false);
 
-            // play win animation
+            // 이겼을 때 애니메이션
             StartCoroutine(WinRoutine());
         }
 
-        // invoke end level event and wait
+        // 레벨 종료 이벤트 발생
         private IEnumerator WinRoutine()
         {
             if (endLevelEvent != null)
@@ -79,13 +79,13 @@ namespace RW.MonumentValley
             yield return new WaitForSeconds(delayTime);
         }
 
-        // restart the scene
+        // 씬 재시작
         public void Restart(float delay)
         {
             StartCoroutine(RestartRoutine(delay));
         }
 
-        // wait for a delay and restart the scene
+        // 딜레이를 기다렸다가 씬 재시작
         private IEnumerator RestartRoutine(float delay)
         {
             yield return new WaitForSeconds(delay);

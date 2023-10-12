@@ -1,66 +1,35 @@
-﻿/*
- * Copyright (c) 2020 Razeware LLC
- * 
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- * 
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
- *
- * Notwithstanding the foregoing, you may not use, copy, modify, merge, publish, 
- * distribute, sublicense, create a derivative work, and/or sell copies of the 
- * Software in any work that is designed, intended, or marketed for pedagogical or 
- * instructional purposes related to programming, coding, application development, 
- * or information technology.  Permission for such use, copying, modification,
- * merger, publication, distribution, sublicensing, creation of derivative works, 
- * or sale is expressly withheld.
- *    
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- * THE SOFTWARE.
- */
-
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 namespace RW.MonumentValley
 {
-    // generates a path through a Graph
+    // Graph를 통해 경로 생성
     [RequireComponent(typeof(Graph))]
     public class Pathfinder : MonoBehaviour
     {
-
-        // path start Node (usually current Node of the Player)
+        // 경로 시작 노드 (현재 Player가 위치하는 노드)
         [SerializeField] private Node startNode;
 
-        // path end Node
+        // 경로 종료 노드(목표 노드)
         [SerializeField] private Node destinationNode;
         [SerializeField] private bool searchOnStart;
 
-        // next Nodes to explore
+        // 탐색할 다음 노드 리스트
         private List<Node> frontierNodes;
 
-        // Nodes already explored
+        // 이미 탐색한 노드 리스트
         private List<Node> exploredNodes;
 
-        // Nodes that form a path to the goal Node (for Gizmo drawing)
+        // goal까지의 경로를 이루는 노드 리스트
         private List<Node> pathNodes;
 
-        // is the search complete?
+        // 탐색이 완료 되었는가
         private bool isSearchComplete;
 
-        // has the destination been found?
+        // 목표 노드를 찾았는가
         private bool isPathComplete;
 
-        // structure containing all Nodes
+        // 모든 노드를 가지고 있음
         private Graph graph;
 
         // properties
@@ -83,10 +52,10 @@ namespace RW.MonumentValley
             }
         }
 
-        // initialize all Nodes/lists
+        // 모든 노드와 리스트를 init
         private void InitGraph()
         {
-            // validate required components
+            // 필요한 컴포넌트들이 유효한지 확인
             if (graph == null || startNode == null || destinationNode == null)
             {
                 return;
@@ -99,26 +68,26 @@ namespace RW.MonumentValley
             isSearchComplete = false;
             isPathComplete = false;
 
-            // remove results of previous searches
+            // 이전 탐색의 결과 삭제
             graph.ResetNodes();
 
-            // first Node
+            // 시작 노드를 탐색할 노드 리스트에 추가
             frontierNodes.Add(startNode);
         }
 
-        // use a simple Breadth-first Search to explore one iteration
+        // BFS 로직
         private void ExpandFrontier(Node node)
         {
-            // validate Node
+            // 유효한 노드인가
             if (node == null)
             {
                 return;
             }
 
-            // loop through all Edges
+            // 모든 Edge를 순회
             for (int i = 0; i < node.Edges.Count; i++)
             {
-                // skip Edge if neighbor already explored or invalid
+                // 이웃한 노드를 이미 탐색했거나 유효하지 않으면 건너뛰기
                 if (node.Edges[i] == null ||
                     node.Edges.Count == 0 ||
                     exploredNodes.Contains(node.Edges[i].neighbor) ||
@@ -127,18 +96,18 @@ namespace RW.MonumentValley
                     continue;
                 }
 
-                // create PreviousNode breadcrumb trail if Edge is active
+                // Edge가 활성화 되어 있다면 trail 연결
                 if (node.Edges[i].isActive && node.Edges[i].neighbor != null)
                 {
                     node.Edges[i].neighbor.PreviousNode = node;
 
-                    // add neighbor Nodes to frontier Nodes
+                    // 탐색할 노드 리스트에 이웃 노드 추가
                     frontierNodes.Add(node.Edges[i].neighbor);
                 }
             }
         }
 
-        // set the PathNodes from the startNode to destinationNode
+        // 시작 노드에서 목표 노드까지의 경로를 set
         public List<Node> FindPath()
         {
             List<Node> newPath = new List<Node>();
@@ -148,44 +117,44 @@ namespace RW.MonumentValley
                 return newPath;
             }
 
-            // prevents infinite loop
+            // 무한 루프 방지
             const int maxIterations = 100;
             int iterations = 0;
 
-            // initialize all Nodes
+            // 모든 노드 init
             InitGraph();
 
-            // search the graph until goal is found or all nodes explored (or exceeding some limit)
+            // goal 노드를 찾거나, 모든 노드를 탐색했거나, max 값을 넘길 때까지 그래프 탐색
             while (!isSearchComplete && frontierNodes != null && iterations < maxIterations)
             {
                 iterations++;
 
-                // if we still have frontier Nodes to check
+                // 더 탐색할 노드가 있다면
                 if (frontierNodes.Count > 0)
                 {
-                    // remove the first Node
+                    // 첫 번째 노드 삭제
                     Node currentNode = frontierNodes[0];
                     frontierNodes.RemoveAt(0);
 
-                    // and add to the exploredNodes
+                    // 탐색할 노드에 추가
                     if (!exploredNodes.Contains(currentNode))
                     {
                         exploredNodes.Add(currentNode);
                     }
 
-                    // add unexplored neighboring Nodes to frontier
+                    // 탐색하지 않은 이웃 노드를 탐색할 노드 리스트에 추가
                     ExpandFrontier(currentNode);
 
-                    // if we have found the destination Node
+                    // 목표 노드를 찾았다면
                     if (frontierNodes.Contains(destinationNode))
                     {
-                        // generate the Path to the goal
+                        // goal까지의 경로 생성
                         newPath = GetPathNodes();
                         isSearchComplete = true;
                         isPathComplete = true;
                     }
                 }
-                // if whole graph explored but no path found
+                // 모든 Graph를 탐색했지만 경로를 찾지 못했다면
                 else
                 {
                     isSearchComplete = true;
@@ -202,7 +171,7 @@ namespace RW.MonumentValley
             return FindPath();
         }
 
-        // find the best path given a bunch of possible Node destinations
+        // 최적의 경로를 찾아 가능한 노드 리스트를 반환
         public List<Node> FindBestPath(Node start, Node[] possibleDestinations)
         {
             List<Node> bestPath = new List<Node>();

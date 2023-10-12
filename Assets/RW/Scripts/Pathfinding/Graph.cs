@@ -1,47 +1,16 @@
-﻿/*
- * Copyright (c) 2020 Razeware LLC
- * 
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- * 
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
- *
- * Notwithstanding the foregoing, you may not use, copy, modify, merge, publish, 
- * distribute, sublicense, create a derivative work, and/or sell copies of the 
- * Software in any work that is designed, intended, or marketed for pedagogical or 
- * instructional purposes related to programming, coding, application development, 
- * or information technology.  Permission for such use, copying, modification,
- * merger, publication, distribution, sublicensing, creation of derivative works, 
- * or sale is expressly withheld.
- *    
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- * THE SOFTWARE.
- */
-
-
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
 namespace RW.MonumentValley
 {
-    // management class for all Nodes
+    // 모든 Node를 관리
     public class Graph : MonoBehaviour
     {
-        // all of the Nodes in the current level/maze
+        // 현재 level에 있는 모든 Node 리스트
         private List<Node> allNodes = new List<Node>();
 
-        // end of level
+        // 마지막 목표 노드
         [SerializeField] private Node goalNode;
         public Node GoalNode => goalNode;
 
@@ -56,7 +25,7 @@ namespace RW.MonumentValley
             InitNeighbors();
         }
 
-        // locate the specific Node at target position within rounding error
+        // 반올림 오차 범위 내에서 타겟 pos에 있는 노드를 찾음
         public Node FindNodeAt(Vector3 pos)
         {
             foreach (Node n in allNodes)
@@ -71,7 +40,7 @@ namespace RW.MonumentValley
             return null;
         }
 
-        // locate the closest Node in screen space, given an array of Nodes
+        // Node 배열이 주어질 때 가장 가까운 Node를 찾음
         public Node FindClosestNode(Node[] nodes, Vector3 pos)
         {
             Node closestNode = null;
@@ -94,13 +63,13 @@ namespace RW.MonumentValley
             return closestNode;
         }
 
-        // find the closest Node in the entire Graph
+        // 전체 Graph에서 가장 가까운 Node를 찾음
         public Node FindClosestNode(Vector3 pos)
         {
             return FindClosestNode(allNodes.ToArray(), pos);
         }
 
-        // clear breadcrumb trail
+        // 추적 경로 clear
         public void ResetNodes()
         {
             foreach (Node node in allNodes)
@@ -109,7 +78,7 @@ namespace RW.MonumentValley
             }
         }
 
-        // set the Graph for each Node
+        // 각 Node에 대해 Graph 설정
         private void InitNodes()
         {
             foreach (Node n in allNodes)
@@ -121,7 +90,7 @@ namespace RW.MonumentValley
             }
         }
 
-        // set neighbors for each Node; must run AFTER all Nodes are initialized
+        // 모든 Node가 생성된 후에 각 Node의 이웃을 set
         private void InitNeighbors()
         {
             foreach (Node n in allNodes)
@@ -133,5 +102,4 @@ namespace RW.MonumentValley
             }
         }
     }
-
 }
